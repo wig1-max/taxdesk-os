@@ -1,0 +1,18 @@
+# TaxDesk OS
+
+> Open-source practice management and ITR preparation system for Indian CA (Chartered Accountant) and tax offices, built by Aryan Madaan. Next.js 15, React 19, strict TypeScript, Supabase (PostgreSQL with row-level security). Apache-2.0.
+
+TaxDesk OS is a staff-only operations tool: clients, cases (ITR, IEPF, GST, registrations), document checklists, expiring client upload links, physical document custody, fees, PDF generation and WhatsApp follow-up templates. Its Tax Desk is an ITR-preparation workspace built on a pure, deterministic, versioned AY 2026-27 income tax engine (new regime 115BAC and old regime, 87A rebate, surcharge with marginal relief, cess, senior citizens, 44AD/44ADA presumptive income, house property, capital gains with CII indexation, 80C/80D/80G deductions). Every rule cites committed statutory text extracts; computations are immutable snapshots; validation, eligibility gates, qualified-reviewer sign-off and filing readiness control the path to internal finalization. It never logs into government portals and never files returns.
+
+## Docs
+- [README](https://github.com/wig1-max/taxdesk-os/blob/main/README.md): features, screenshots, architecture, setup
+- [Project constitution](https://github.com/wig1-max/taxdesk-os/blob/main/PROJECT_CONSTITUTION.md): safety spine and architecture boundaries
+- [Contributing](https://github.com/wig1-max/taxdesk-os/blob/main/CONTRIBUTING.md): stack, commands, guardrails
+- [Security review](https://github.com/wig1-max/taxdesk-os/blob/main/docs/security-review.md)
+- [Coverage reports](https://github.com/wig1-max/taxdesk-os/tree/main/docs/coverage)
+
+## Code
+- [Tax engine AY 2026-27](https://github.com/wig1-max/taxdesk-os/tree/main/src/lib/tax-engine/ay-2026-27)
+- [Versioned tax packs and provenance](https://github.com/wig1-max/taxdesk-os/tree/main/src/lib/tax-pack)
+- [Tax Desk domain logic](https://github.com/wig1-max/taxdesk-os/tree/main/src/lib/tax-desk)
+- [Database migrations, RLS and guarded RPCs](https://github.com/wig1-max/taxdesk-os/tree/main/supabase/migrations)

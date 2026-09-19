@@ -1,0 +1,77 @@
+-- ============================================================
+-- TaxDesk OS — 20260810180000 TRUNCATE default-privilege revoke (AUDIT-08-F5)
+--
+-- Permission-only. Creates nothing, drops nothing, touches no row.
+--
+-- WHAT THIS CLOSES
+-- ----------------
+-- `20260810160000_truncate_overgrant_sweep.sql` (AUDIT-08-F1) re-revoked
+-- TRUNCATE from every table that existed at that moment. It fixed the symptom
+-- and left the CAUSE armed: a DEFAULT PRIVILEGE re-grants TRUNCATE on every
+-- NEW `public` table, so the next table created would re-acquire it and the
+-- whole finding would recur. `AUDIT-08` recorded that residual as `F5`.
+--
+-- CORRECTING `20260810160000`'s STATED REASONING
+-- ---------------------------------------------
+-- That migration's header argued against using `ALTER DEFAULT PRIVILEGES`:
+--
+--   "Default privileges are recorded per granting ROLE. The grant being undone
+--    is made by Supabase's own platform role on its own schedule, so an `ALTER
+--    DEFAULT PRIVILEGES` issued by the migration role would not necessarily
+--    intercept it, and one that appeared to work locally could silently fail to
+--    bind on the hosted project — a guard that looks like a guard and is not."
+--
+-- That was ASSERTED rather than checked, and it is wrong for the grant that
+-- actually matters. `pg_default_acl` names the granting role, and the
+-- production schema dump names it too: the entry producing the observed
+-- grants is owned by `postgres`, which migrations run as and can therefore
+-- target. Measured on the local instance before writing this migration:
+--
+--   grantor          default ACL on TABLES in schema public
+--   ---------------  -------------------------------------------------------
+--   postgres         anon=Dxtm, authenticated=Dxtm
+--   supabase_admin   anon=arwdDxtm, authenticated=arwdDxtm
+--
+-- `D` is TRUNCATE. A table created as `postgres` (which is how every migration
+-- in this repository creates one) inherits the FIRST row. Verified by probe:
+-- creating a throwaway table yielded
+-- `anon=Dxtm/postgres,authenticated=Dxtm/postgres`; after the statement below
+-- the same probe yielded `anon=xtm/postgres,authenticated=xtm/postgres`. The
+-- probe tables were dropped and the default was restored, so THIS migration is
+-- what makes the change stick rather than a hand-run command.
+--
+-- WHAT THIS DOES **NOT** CLOSE — stated rather than implied
+-- --------------------------------------------------------
+--  1. `supabase_admin`'s default ACL is real and grants far more than TRUNCATE
+--     (`arwdDxtm` — SELECT, INSERT, UPDATE, DELETE and TRUNCATE) to `anon` and
+--     `authenticated`. It is NOT touched here: `supabase_admin` is genuinely a
+--     platform-owned role, so this is the case `20260810160000`'s reasoning
+--     described — it just was not the case that produced the finding. It does
+--     not affect this repository's tables, because none is created by that
+--     role; a table created by `supabase_admin` would inherit it, and nothing
+--     here does that. Recorded so a later reader does not mistake this
+--     migration for total closure.
+--  2. `x` (REFERENCES), `t` (TRIGGER) and `m` (MAINTAIN) remain in the
+--     `postgres` default ACL for `anon`/`authenticated`. Only TRUNCATE is
+--     revoked, because TRUNCATE is the one that bypasses RLS and skips the
+--     row-level `enforce_ledger_finalized_lock` trigger, and because widening
+--     a security change beyond the authorized finding is how a scoped fix
+--     turns into an unreviewed one. `t` in particular deserves its own look in
+--     a later session; it is recorded, not fixed.
+--
+-- THE STANDING CONTROL IS STILL THE ASSERTION, NOT THIS STATEMENT.
+-- `tests/db/boundary-catalog.mjs` (D242) fails if any `public` object grants
+-- TRUNCATE to `authenticated` or `anon`. This migration removes the cause;
+-- that assertion proves the removal keeps working. Neither replaces the other.
+--
+-- IDEMPOTENT. `ALTER DEFAULT PRIVILEGES ... REVOKE` on a privilege that is
+-- already absent is a no-op, so re-running this migration is safe.
+--
+-- PRODUCTION: NOT APPLIED BY THIS SESSION. `OPS-09R2`'s authorization is spent.
+-- Applying this to `taxdesk-os-prod` needs a NEW, exact owner authorization.
+-- Production is not currently exposed — the existing tables were cleaned by
+-- `20260810160000` and the default only affects tables created FROM NOW ON.
+-- ============================================================
+
+alter default privileges for role postgres in schema public
+  revoke truncate on tables from authenticated, anon;

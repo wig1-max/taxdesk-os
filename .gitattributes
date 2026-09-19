@@ -1,0 +1,35 @@
+# AUDIT-04-F13 / D100 / D109: normalise line endings in the repository.
+#
+# Before this, the repo had no .gitattributes while this host sets
+# core.autocrlf=true, so a file's line endings were a function of the
+# developer's git config rather than the repository. That cost two
+# consecutive sessions: K4-09 lost a preflight to three coverage-marker guards
+# whose LF-only regexes never matched CRLF checkouts (fixed in 6ab52ae), and
+# OPS-03 orphaned a carriage return in a line-based splice, turning a 3-line
+# change into a 490-line diff.
+#
+# Git now stores LF; the working tree gets whatever the platform prefers.
+* text=auto
+
+# TAX-SAFE-02A: the D93 evidence package is the exception. Its whole point is a
+# SHA256 chain of custody back to artifacts retrieved from the Income Tax
+# Department, so those files must round-trip byte-for-byte. Under `* text=auto`
+# they did not: two of the four vendored records were normalised to LF on
+# commit and restored as CRLF on checkout, so they no longer hashed to their
+# source. Disable text/EOL conversion for the artifacts; the README is ordinary
+# documentation, so it keeps the repository default.
+#
+# `whitespace=-trailing-space` comes with `-text`, not as a style preference:
+# some of these artifacts genuinely contain CRLF, so once the `\r` is preserved
+# as content, `git diff --check` reports a trailing-whitespace error on every
+# single line of them. That is a false positive intrinsic to byte-exact
+# preservation, and left in place it would drown the real signal `--check`
+# exists to give. Diffs stay readable (these are not marked `binary`).
+docs/evidence/d93-ay-2026-27/** -text whitespace=-trailing-space
+docs/evidence/d93-ay-2026-27/README.md text=auto whitespace
+
+# Statutory extracts are generated with a deliberate blank line after the
+# final `END pdftotext` marker (the same shape all existing extracts carry).
+# Keep every other whitespace check active, but do not report that generated
+# terminal separator as a new blank-at-EOF defect when a range is added.
+docs/evidence/statutory-sources/extracts/**/*.txt whitespace=-blank-at-eof

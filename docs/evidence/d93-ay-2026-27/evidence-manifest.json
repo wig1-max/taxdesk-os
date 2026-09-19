@@ -1,0 +1,106 @@
+{
+  "manifest_schema_version": "1.0",
+  "decision": "D93",
+  "package_purpose": "Official AY 2026-27 evidence package",
+  "tax_period": {
+    "financial_year": "2025-26",
+    "assessment_year": "2026-27"
+  },
+  "official_source_policy": "Income Tax Department / CBDT sources only",
+  "official_download_index_url": "https://www.incometax.gov.in/iec/foportal/downloads/income-tax-returns",
+  "retrieval_timestamp": "2026-08-01T00:24:26.916+05:30",
+  "expected_hash_reference": {
+    "source_filename": "D93-evidence-manifest.json",
+    "source_sha256": "34ED0BF698F0F6748A6CC16F2C897EB9012ECEB26FAF3C19A58F7FE11926E928",
+    "source_note": "Supplied with the official research package."
+  },
+  "verification_summary": {
+    "official_artifacts_expected": 5,
+    "official_artifacts_retrieved": 5,
+    "exact_expected_hash_matches": 5,
+    "hash_mismatches": 0,
+    "updated_upstream_versions_substituted": 0,
+    "client_data_used": false,
+    "repository_modified": false
+  },
+  "files": [
+    {
+      "canonical_display_name": "ITR-2 Excel Utility v1.2",
+      "local_filename": "ITR2_AY_26-27_V1.2.xlsm",
+      "official_url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR2_AY_26-27_V1.2.zip",
+      "release_or_document_date": "2026-07-17",
+      "file_size_bytes": 10067896,
+      "sha256": "E5CE02F3FFC848D7FB708D4157C6C41AF12013E68EE84686715B788C1F9FB785",
+      "expected_sha256": "E5CE02F3FFC848D7FB708D4157C6C41AF12013E68EE84686715B788C1F9FB785",
+      "verification_status": "verified_exact_hash_match",
+      "retrieval_timestamp": "2026-08-01T00:24:26.916+05:30",
+      "notes": "The official source distributes this workbook inside ITR2_AY_26-27_V1.2.zip. The ZIP was downloaded without modification; its SHA256 is 7A6E10DEF93B73CD3AFA88B25E424A096F0EED9B34D86C65BF84037841418E3B, exactly matching the expected transport hash. The workbook was extracted without modification and its filename and hash exactly match the prior manifest. Static evidence only; macros were not executed and no portal upload was performed."
+    },
+    {
+      "canonical_display_name": "ITR-2 JSON Schema v1.1",
+      "local_filename": "ITR-2_2026_Main_V1.1.json",
+      "official_url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/ITR-2_2026_Main_V1.1.json",
+      "release_or_document_date": "2026-06-30",
+      "file_size_bytes": 390029,
+      "sha256": "77BE18189ECAC94C7ED22BAAA5E3BB46E238F781F55B9E2A8F6547F1E8E00EC8",
+      "expected_sha256": "77BE18189ECAC94C7ED22BAAA5E3BB46E238F781F55B9E2A8F6547F1E8E00EC8",
+      "verification_status": "verified_exact_hash_match",
+      "retrieval_timestamp": "2026-08-01T00:24:26.916+05:30",
+      "notes": "Downloaded directly from the official Income Tax Department URL. Filename and SHA256 exactly match the prior manifest; JSON syntax parsed successfully."
+    },
+    {
+      "canonical_display_name": "ITR-3 JSON Schema v1.1",
+      "local_filename": "ITR-3_2026_Main_V1.1.json",
+      "official_url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR-3_2026_Main_V1.1.json",
+      "release_or_document_date": "2026-06-30",
+      "file_size_bytes": 1060874,
+      "sha256": "66F4BD705E0E0788FDACB37EB297ACE56749D791B84F2F170F4DA84236C25E8B",
+      "expected_sha256": "66F4BD705E0E0788FDACB37EB297ACE56749D791B84F2F170F4DA84236C25E8B",
+      "verification_status": "verified_exact_hash_match",
+      "retrieval_timestamp": "2026-08-01T00:24:26.916+05:30",
+      "notes": "Downloaded directly from the official Income Tax Department URL. Filename and SHA256 exactly match the prior manifest; JSON syntax parsed successfully."
+    },
+    {
+      "canonical_display_name": "ITR-2 Validation Rules v1.0",
+      "local_filename": "ITR-2-validation-rules-v1.0.pdf",
+      "official_url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf",
+      "release_or_document_date": "2026-05-26",
+      "file_size_bytes": 740989,
+      "sha256": "2321C5BA2469D3C9EAEEE40D906B99ABE56176782D547E6D0EC09FFDB529550B",
+      "expected_sha256": "2321C5BA2469D3C9EAEEE40D906B99ABE56176782D547E6D0EC09FFDB529550B",
+      "verification_status": "verified_exact_hash_match",
+      "retrieval_timestamp": "2026-08-01T00:24:26.916+05:30",
+      "notes": "Downloaded directly from the official Income Tax Department/CBDT URL. Filename and SHA256 exactly match the prior manifest; the file has a valid PDF signature."
+    },
+    {
+      "canonical_display_name": "ITR-3 Validation Rules v1.0",
+      "local_filename": "ITR-3-validation-rules-v1.0.pdf",
+      "official_url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf",
+      "release_or_document_date": "2026-06-18",
+      "file_size_bytes": 1112874,
+      "sha256": "60334E821EEF769B1AF2826B7E8CA2F1AEB76B302886473ED5FEC6A0B7CC9D5D",
+      "expected_sha256": "60334E821EEF769B1AF2826B7E8CA2F1AEB76B302886473ED5FEC6A0B7CC9D5D",
+      "verification_status": "verified_exact_hash_match",
+      "retrieval_timestamp": "2026-08-01T00:24:26.916+05:30",
+      "notes": "Downloaded directly from the official Income Tax Department/CBDT URL. Filename and SHA256 exactly match the prior manifest; the file has a valid PDF signature."
+    },
+    {
+      "canonical_display_name": "D93 Evidence Manifest",
+      "local_filename": "evidence-manifest.json",
+      "official_url": null,
+      "release_or_document_date": "2026-08-01",
+      "file_size_bytes": null,
+      "sha256": null,
+      "expected_sha256": null,
+      "verification_status": "generated_locally_not_an_official_artifact",
+      "retrieval_timestamp": "2026-08-01T00:24:26.916+05:30",
+      "notes": "Generated locally from verified download metadata. Its exact-file SHA256 cannot be embedded in the file itself without changing that hash; calculate it externally when transferring the package. No expected hash existed in the prior manifest."
+    }
+  ],
+  "reliance_limits": [
+    "Hash matches establish identity with the artifacts recorded in the prior D93 manifest; they do not convert portal behavior into statute.",
+    "The workbook macro trace remains external portal-conformance evidence until an independent reviewer reproduces the static trace from this exact workbook.",
+    "No workbook macros were executed, no portal upload or CPC acceptance test was performed, and no client data was used.",
+    "Revalidate after any utility, schema, or validation-rule revision."
+  ]
+}

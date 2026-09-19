@@ -1,0 +1,58 @@
+-- ============================================================
+-- TaxDesk OS — 20260813200000 TRIGGER default-privilege revoke
+--
+-- Permission-only. Creates nothing, drops nothing, touches no row.
+--
+-- WHAT THIS CLOSES
+-- ----------------
+-- `20260810180000` (AUDIT-08-F5 / D252) revoked TRUNCATE from the `postgres`
+-- DEFAULT PRIVILEGE on `public` tables and left `REFERENCES`, `TRIGGER` and
+-- `MAINTAIN` in place — recording TRIGGER as a residual that "deserves its own
+-- scoped session" (the project status notes "Immediate risks"). This migration closes that
+-- residual. TRIGGER lets a grantee attach a trigger function to a NEW table
+-- created under the default ACL, which is an unnecessary client-role capability
+-- in this product (every trigger this repository ships is owned by a migration
+-- and is part of the schema, not granted to `authenticated`/`anon`).
+--
+-- THE GRANTOR IS `postgres`, NOT `supabase_admin`
+-- -----------------------------------------------
+-- Same finding as D252, re-verified: `pg_default_acl` names the grantor, and
+-- the entry producing the observed grants is owned by `postgres` — the role
+-- migrations create tables as, so it is targetable by a migration. The wider
+-- `supabase_admin` default ACL is genuinely platform-owned and is NOT touched
+-- here; no table in this repository is created by that role.
+--
+-- WHAT THIS DOES **NOT** CLOSE — stated rather than implied
+-- --------------------------------------------------------
+--  1. `supabase_admin`'s default ACL (`anon=arwdDxtm` / `authenticated=arwdDxtm`)
+--     is untouched, exactly as in `20260810180000`. It is platform-owned; no
+--     repository table is created by that role.
+--  2. `REFERENCES` (`x`) and `MAINTAIN` (`m`) REMAIN in the `postgres` default
+--     ACL for `anon`/`authenticated`. They are retained deliberately:
+--       - `REFERENCES` is needed for foreign-key metadata introspection a
+--         client may legitimately perform.
+--       - `MAINTAIN` governs maintenance operations (ANALYZE/VACUUM) that this
+--         product's clients do not exercise but that Supabase's own tooling
+--         may rely on; revoking it is out of scope for this finding.
+--     Only TRIGGER is revoked, because widening a security change beyond the
+--     authorized finding is how a scoped fix turns into an unreviewed one
+--     (the same discipline D252 applied to TRUNCATE).
+--
+-- THE STANDING CONTROL IS STILL THE ASSERTION, NOT THIS STATEMENT.
+-- `tests/db/boundary-catalog.mjs` (this session's TRIGGER default-privilege
+-- check, aclexplode-based per D252's lesson) fails if the `postgres` default
+-- ACL grants TRIGGER to `authenticated` or `anon` on new `public` tables. This
+-- migration removes the cause; that assertion proves the removal keeps working.
+--
+-- IDEMPOTENT. `ALTER DEFAULT PRIVILEGES ... REVOKE` on a privilege that is
+-- already absent is a no-op, so re-running this migration is safe.
+--
+-- PRODUCTION: NOT APPLIED BY THIS SESSION. The `20260810180000` authorization
+-- is spent. Applying this to `taxdesk-os-prod` needs a NEW, exact owner
+-- authorization and the production database password (the AI does not handle
+-- it). The owner runs the prod apply; the session then verifies read-only from
+-- a post-apply catalog dump (the D165 pattern).
+-- ============================================================
+
+alter default privileges for role postgres in schema public
+  revoke trigger on tables from authenticated, anon;

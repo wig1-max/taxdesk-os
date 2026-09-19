@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use or reference this software, please cite it as below."
+title: "TaxDesk OS: practice management and ITR preparation for Indian CA and tax offices"
+type: software
+authors:
+  - family-names: Madaan
+    given-names: Aryan
+    email: aryanmadaan@gmail.com
+repository-code: "https://github.com/wig1-max/taxdesk-os"
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-09-19
+keywords:
+  - income tax India
+  - ITR preparation
+  - chartered accountant
+  - practice management
+  - tax computation engine
+  - Next.js
+  - Supabase
+abstract: >-
+  An operations command center for Indian CA and tax practices: clients, cases,
+  expiring client upload links, physical document custody, fees and PDFs, plus a
+  Tax Desk ITR-preparation workspace built on a pure, deterministic, versioned
+  AY 2026-27 income tax engine with evidence-cited provenance, validation,
+  qualified-reviewer sign-off and filing-readiness gates.

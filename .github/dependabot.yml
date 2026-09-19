@@ -1,0 +1,26 @@
+version: 2
+updates:
+  # Security updates only, grouped by dependency type. Version-bump PRs are
+  # disabled (limit 0) so upgrades stay deliberate.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 0
+    groups:
+      production-security:
+        applies-to: security-updates
+        dependency-type: "production"
+        patterns:
+          - "*"
+      development-security:
+        applies-to: security-updates
+        dependency-type: "development"
+        patterns:
+          - "*"
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+      include: "scope"

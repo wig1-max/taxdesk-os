@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="t d">
+  <title id="t">TaxDesk OS: practice management and ITR preparation for Indian CA and tax offices</title>
+  <desc id="d">Clients, cases and document collection with a deterministic AY 2026-27 income tax engine, evidence-cited provenance, validation, reviewer sign-off and filing readiness.</desc>
+  <rect width="1280" height="400" fill="#f4f6fa"/>
+  <circle cx="1140" cy="60" r="230" fill="#1b4288" opacity="0.08"/>
+  <circle cx="1210" cy="330" r="120" fill="#e8a23a" opacity="0.14"/>
+
+  <g transform="translate(72,74)">
+    <rect width="64" height="64" rx="14" fill="#1b4288"/>
+    <text x="32" y="43" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">T<tspan fill="#f2b957">D</tspan></text>
+  </g>
+  <text x="156" y="124" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#101828">TaxDesk <tspan fill="#1b4288">OS</tspan></text>
+
+  <text x="72" y="206" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#101828">Every number traceable. Every approval bound.</text>
+  <text x="74" y="250" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#475467">Practice management and ITR preparation for Indian CA and tax offices</text>
+
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#101828">
+    <g transform="translate(74,290)"><rect width="236" height="40" rx="20" fill="#ffffff" stroke="#d0d5dd"/><text x="118" y="26" text-anchor="middle">AY 2026-27 tax engine</text></g>
+    <g transform="translate(322,290)"><rect width="222" height="40" rx="20" fill="#ffffff" stroke="#d0d5dd"/><text x="111" y="26" text-anchor="middle">Statute-cited rules</text></g>
+    <g transform="translate(556,290)"><rect width="206" height="40" rx="20" fill="#ffffff" stroke="#d0d5dd"/><text x="103" y="26" text-anchor="middle">Client upload links</text></g>
+    <g transform="translate(774,290)"><rect width="196" height="40" rx="20" fill="#ffffff" stroke="#d0d5dd"/><text x="98" y="26" text-anchor="middle">Reviewer sign-off</text></g>
+    <g transform="translate(982,290)"><rect width="190" height="40" rx="20" fill="#1b4288"/><text x="95" y="26" text-anchor="middle" font-weight="700" fill="#ffffff">Row-level security</text></g>
+  </g>
+
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#667085" text-anchor="end">
+    <text x="1208" y="370">Next.js · React 19 · TypeScript · Supabase / PostgreSQL · 2,400+ automated checks</text>
+  </g>
+</svg>

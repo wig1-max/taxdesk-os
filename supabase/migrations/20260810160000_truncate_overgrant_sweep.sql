@@ -1,0 +1,55 @@
+-- ============================================================
+-- TaxDesk OS — 20260810160000 TRUNCATE over-grant re-sweep (AUDIT-08-F1)
+--
+-- Additive/permission-only. Creates nothing, drops nothing, touches no row.
+--
+-- WHAT WAS WRONG
+-- --------------
+-- `20260712140000_authz_boundary_enforcement.sql` §1e ran:
+--
+--     revoke truncate on all tables in schema public from authenticated;
+--
+-- and described it, correctly, as "Latent over-grant cleanup (TRUNCATE
+-- bypasses RLS; never used by the app)". But `ON ALL TABLES IN SCHEMA` is a
+-- POINT-IN-TIME sweep over the tables that existed at that instant — it is
+-- not a default privilege and it does not bind anything created later.
+-- Supabase's default ACL grants the full privilege set on new `public` tables
+-- to `authenticated`, so every table created after 2026-07-12 silently
+-- re-acquired TRUNCATE and nothing re-revoked it.
+--
+-- The correlation was exact when `AUDIT-08` measured it: all ten objects
+-- holding TRUNCATE post-dated the sweep, and NO pre-sweep table held it —
+--   qualified_reviewers, tax_brought_forward_loss_entries (K4-10),
+--   tax_business_books_entries (K4-14), tax_case_review_history,
+--   tax_case_reviews, tax_draft_outputs, tax_evidence_manifests,
+--   tax_house_property_entries (K4-06), tax_reviewer_credentials,
+--   tax_source_proposals.
+--
+-- SEVERITY, STATED HONESTLY
+-- -------------------------
+-- This is least-privilege decay, NOT a live exploit path. PostgREST exposes
+-- no TRUNCATE verb, so an `authenticated` JWT holder has no route to reach it
+-- through the application. It matters because TRUNCATE bypasses RLS entirely
+-- and does not fire the row-level `enforce_ledger_finalized_lock` trigger
+-- (TRUNCATE fires only statement-level TRUNCATE triggers), so the privilege
+-- contradicts two controls this repository does rely on — and because a
+-- control that silently stops applying to everything built after it is the
+-- `AUDIT-05-F3` shape, which this project has decided repeatedly to fix
+-- rather than re-document.
+--
+-- WHY THERE IS NO `alter default privileges` HERE
+-- -----------------------------------------------
+-- Default privileges are recorded per granting ROLE. The grant being undone
+-- is made by Supabase's own platform role on its own schedule, so an `ALTER
+-- DEFAULT PRIVILEGES` issued by the migration role would not necessarily
+-- intercept it, and one that appeared to work locally could silently fail to
+-- bind on the hosted project — a guard that looks like a guard and is not.
+-- The standing control is therefore an ASSERTION, not another sweep:
+-- `tests/db/catalog-invariants.mjs` now fails if any `public` object grants
+-- TRUNCATE to `authenticated` or `anon`. A future table that re-acquires it
+-- fails `npm run test:db` and the hosted gate, which is the property the
+-- 2026-07-12 sweep was missing.
+-- ============================================================
+
+revoke truncate on all tables in schema public from authenticated;
+revoke truncate on all tables in schema public from anon;

@@ -1,0 +1,1764 @@
+{
+  "$comment": [
+    "K4-PORT-02 (D300) — the local statutory source artifacts, registered so they are",
+    "VERIFIABLE and REPLACEABLE without being vendored into git history.",
+    "",
+    "The artifacts live at `.sources/statutory/` (gitignored — see .gitignore for why:",
+    "this repository tracks zero PDFs and these total ~134 MB against a 39 MB .git).",
+    "A session that finds one missing re-retrieves it from `url` and checks `sha256`.",
+    "",
+    "THIS FILE IS EVIDENCE, NOT AUTHORITY. Registering a source neither verifies a tax",
+    "treatment (PROJECT_CONSTITUTION.md §2 rule 5) nor moves any pack toward",
+    "`ca_verified` (§2 rule 10). Read the official-source-retrieval design notes §4",
+    "for the mandatory provenance fields and §5 for the source-rank ladder before",
+    "quoting anything here."
+  ],
+  "recordedBy": "K4-PORT-02, extended by K4-SOURCE-01, K4-SOURCE-02, K4-SOURCE-04, K4-23, K4-SOURCE-05 (AY 2026-27 ITR output contracts), K4-SOURCE-06 (the enacted Finance Acts 2015-2025), and K4-SOURCE-07 (the five outstanding CII notifications, the consolidated Income-tax Act 1961 and Rules 1962, and Forms 10E, 3CD and 10-IEA)",
+  "recordedOn": "2026-08-22",
+  "artifacts": [
+    {
+      "id": "K4-SOURCE-04-S1",
+      "file": "Gazette_CBDT_Notification-70-2025_CII-FY-2025-26.pdf",
+      "sha256": "afeec43c6d850816cd0ebeb31a50101373202b88d0f41756ac46aa33bc02fac5",
+      "bytes": 912032,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. The notification inserts the FY 2025-26 CII into the table underlying K4-21's existing house-sale LTCG refusal. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification issued 2025; FY 2025-26 entry; effective 1 April 2026 for AY 2026-27 and subsequent years",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 2954(E). Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India, says PUBLISHED BY AUTHORITY, and records publication by the Controller of Publications.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 70/2025 / F. No. 370142/24/2025-TPL",
+      "gazetteNumber": "S.O. 2954(E); Gazette ID CG-DL-E-01072025-264279; No. 2887",
+      "notificationDate": "2025-07-01",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by Samuel Pitta, Deputy Secretary (Tax Policy and Legislation)",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2025/264279.pdf",
+      "route": "official e-Gazette direct PDF GET → local artifact bytes → SHA-256 → visual review in Chrome PDF viewer → pdftotext pages 1-2 in -layout, default and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "After serial number 24, insert: serial 25 / Financial Year 2025-26 / Cost Inflation Index 376.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index for financial year 2025-26 is 376.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961.",
+        "The notification comes into force on 1 April 2026 and applies to Assessment Year 2026-27 and subsequent years."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide how K4-21's section 112 comparison should be computed or which branch controls a case.",
+        "It does not supply acquisition-year or improvement-year CII inputs, acquisition/improvement costs, deemed consideration facts, or exemption facts.",
+        "It does not establish eligibility or arithmetic under sections 54 or 54F, nor resolve sections 49 or 50, agricultural-land, loss or mixed-set-off cases."
+      ],
+      "readingHazard": "The English instrument is on page 2. -layout and -raw preserve the inserted row on one line; default mode splits the three cells column-major. All three modes carry the same serial 25 / FY 2025-26 / 376 content. The Hindi text layer is visibly degraded, but the English text is clean and the visual PDF review confirms the table row and digital publication line."
+    },
+    {
+      "id": "K4-SOURCE-02-S1",
+      "file": "ITD_Finance-Act-2026_s2_Income-tax-under-Act-43-of-1961.pdf",
+      "sha256": "934bf432e4c4c929d5cd06b5c681184daecf596aca23321df554dfd9278171ff",
+      "bytes": 733777,
+      "act": "Finance Act, 2026 — section 2 (charging section for the INCOME-TAX ACT, 1961)",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. This is the half ICAI's K4-PORT-02-S1 omits. It has NOTHING to do with the TY 2026-27 / 2025-Act world, which is charged by s.3.",
+      "year": "2026",
+      "stage": "ENACTED — the Finance Act as published by the department. NOT the Finance Bill (BILL No. 3 of 2026 is registered SEPARATELY as K4-SOURCE-02-S5, outside the rank ladder, corroboration only).",
+      "publisher": "Income Tax Department (CBDT), Ministry of Finance",
+      "sourceRank": 1,
+      "url": "https://www.incometaxindia.gov.in/finance-acts — per-section \"Download PDF\" for Chapter II section 2; original filename Section-2_2026-07-29_10-19-23_ff25c1_en.pdf",
+      "route": "owner browser retrieval → save-dialog accept (official-source-retrieval.md §3.1) → identified, hashed and registered by K4-SOURCE-02 2026-08-15",
+      "retrievedOn": "2026-08-15",
+      "identityCaveat": {
+        "$comment": "READ THIS BEFORE CITING. The PDF's own text does NOT name its parent Act.",
+        "claim": "The document renders as 'CHAPTER II / RATES OF INCOME-TAX / Income-tax under Act 43 of 1961' with no 'Finance Act, 2026' title line. Its identity rests on three things, not on a title.",
+        "establishedBy": [
+          "the retrieval location — ITD's /finance-acts listing, per-section download;",
+          "its own charging year — s.2(1) charges 'for the assessment year commencing on the 1st day of April, 2026';",
+          "its First Schedule sibling (K4-SOURCE-02-S2) is headed '(See sections 2 and 3)' and carries a Part I-B for the Income-tax Act, 2025 — a structure only the Finance Act, 2026 has, and that Part I-B is verbatim-identical to the Finance Act, 2026 appendix in ICAI's K4-PORT-02-S1."
+        ]
+      },
+      "whatItUnblocks": [
+        "s.2(6) states the Health and Education Cess at FOUR PER CENT in PROSE — the AY 2026-27 cess_rate gap (K4-SOURCE-01 report §3.2).",
+        "s.2(4)(b) Table Sl. No. 10 carries the NEW-REGIME (s.115BAC(1A)) surcharge rates; Sl. No. 11 the AOP-of-companies variant.",
+        "s.2(5) and its Table carry the new-regime MARGINAL RELIEF formula (To = Ro + So) and its bands."
+      ],
+      "readingHazard": "This PDF carries character-level OCR corruption in section cross-references — '115BAC(14)', '115BAC(M)', '115AD(1)(6)', '115AD(7)(6)', 'sub-section (IA)', 'Rs. 1 ,00,00,000' all appear. The RATE words are spelled out ('ten per cent.') and are unaffected, but DO NOT quote a section cross-reference from this file without corroboration."
+    },
+    {
+      "id": "K4-SOURCE-02-S2",
+      "file": "ITD_Finance-Act-2026_First-Schedule_complete.pdf",
+      "sha256": "b47c16575862d2f048ffb7c63a5a326deb17bab362245d909d6daa7d2caf6208",
+      "bytes": 2442226,
+      "act": "Finance Act, 2026 — THE FIRST SCHEDULE (complete: Parts I, II, III and IV)",
+      "statutoryWorld": "BOTH. Part I-A and Part IV-A serve AY 2026-27 / INCOME-TAX ACT, 1961; Part I-B and Part IV-B serve TY 2026-27 / INCOME-TAX ACT, 2025. NAME THE PART WHENEVER YOU CITE THIS FILE — the file itself is not scoped to one world.",
+      "year": "2026",
+      "stage": "ENACTED — the Finance Act as published by the department. NOT the Finance Bill.",
+      "publisher": "Income Tax Department (CBDT), Ministry of Finance",
+      "sourceRank": 1,
+      "url": "https://www.incometaxindia.gov.in/finance-acts — per-schedule \"Download PDF\"; original filename First-Schedule_2026-07-04_04-22-39_ee114f_en.pdf",
+      "route": "owner browser retrieval → save-dialog accept (official-source-retrieval.md §3.1) → identified, hashed and registered by K4-SOURCE-02 2026-08-15",
+      "retrievedOn": "2026-08-15",
+      "structure": {
+        "PART I A.--INCOME-TAX UNDER THE INCOME-TAX ACT, 1961": "Paragraphs A-E (rates, incl. the resident senior 60-80 and super-senior 80+ bands) and Paragraph F (surcharge Table 1 + marginal-relief Table 2). THE AY 2026-27 WORLD.",
+        "PART I B.--INCOME-TAX UNDER THE INCOME-TAX ACT, 2025": "the TY 2026-27 counterpart. OUT OF SCOPE for the AY engine.",
+        "PART II / PART III": "TDS rates / advance-tax rates. BOTH SERVE THE 2025 ACT THROUGHOUT — their opening lines reference \"the Income-tax Act, 2025 (30 of 2025)\" — unlike Parts I and IV, which split into A (1961 Act) and B (2025 Act) halves. So a TY citation may name Part II or III without breaching the half separation D301 established.",
+        "PART IV A and B": "net-agricultural-income computation rules, per Act."
+      },
+      "identityCorroboration": "Its Part I-B Paragraph A is VERBATIM-IDENTICAL to the Finance Act, 2026 appendix reproduced in ICAI's K4-PORT-02-S1 (same '(See sections 2 and 3)' heading, same s.2(77)(g) reference, same slab figures). A rank-1 ITD publication and a rank-2 ICAI reproduction agreeing on the overlapping half is what establishes that this IS the Finance Act, 2026 First Schedule — and this copy additionally carries the Part I-A that ICAI elided.",
+      "whatItUnblocks": [
+        "Part I-A Paragraph F Table 1 Sl. No. 1 carries the OLD-REGIME individual surcharge rates — the AY 2026-27 surcharge_rates gap (K4-SOURCE-01 report §3.1).",
+        "Part I-A Paragraph F Table 2 Sl. No. 1 carries the old-regime MARGINAL RELIEF formula (Wo = Uo + Vo) and its bands — the surcharge_marginal_relief gap.",
+        "Part I-B Paragraph A items (I)/(II)/(III) carry the TY 2026-27 old-regime slab tables INCLUDING the resident 60-80 and 80+ bands — the sourcing D298 said must not be assumed (K4-PORT-04, D314); Paragraph F Table 1 Sl. No. 1 and Table 2 Sl. No. 1 carry the TY surcharge and its marginal relief.",
+        "PART III IS RANK-1 CORROBORATION OF THE MECHANISM D314 TURNS ON, and it is the reason this artifact matters beyond its rate tables. Its opening line excepts advance tax \"in respect of any income chargeable to tax under Part A, B, C or D of Chapter XIII ... at the rates as specified in that Chapter or section\", which PRESUPPOSES what Finance Act 2026 s.3(3) provides — and s.3 itself is held ONLY in ICAI's rank-2 reproduction (K4-PORT-02-S1), because the ITD copy here is s.2, the 1961-Act half. IT IS NOT s.3(3) AND CHARGES NOTHING: it corroborates the mechanism's existence and exact wording, never the charge, and says nothing about the cess. Rank-1 corroboration for s.3(1)/(3)/(15) themselves is still OWED."
+      ],
+      "readingHazard": "EVERY RATE IN THIS FILE IS IN A TABLE. `pdftotext -layout` misrenders Paragraph F's Table 2 badly (rows shuffled across the Sl. No. column). See the readingHazards note about the THIRD extraction mode."
+    },
+    {
+      "id": "K4-SOURCE-02-S3",
+      "file": "ITD_Income-tax-Rules-1962_rule-12.pdf",
+      "sha256": "6f7bdce7e47aad18ecc48c73aea36e5b2fd096d9e85d7e9fb4e7452f43bb5cf3",
+      "bytes": 747651,
+      "act": "Income-tax Rules, 1962 — rule 12 (Return of income and return of fringe benefits)",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. The 1962-Rules counterpart of the Income-tax Rules, 2026 rule 164 that K4-SOURCE-01 cited for the TY world. SAME FIGURE, DIFFERENT INSTRUMENT, DIFFERENT WORLD — do not merge the two citations.",
+      "year": "as amended for the assessment year commencing on the 1st day of April, 2026",
+      "stage": "NOTIFIED RULES, as consolidated and published by the department (amendment footnote markers retained in the text).",
+      "publisher": "Income Tax Department (CBDT), Ministry of Finance",
+      "sourceRank": 2,
+      "sourceRankNote": "Rules rank 2 on the official-source-retrieval.md §5 ladder (statutory rules / notifications) regardless of publisher. The PUBLISHER here is rank-1 material (ITD's own consolidation), which is why it is preferred over a third-party reproduction — but the instrument is a Rule, not the Act.",
+      "url": "https://www.incometaxindia.gov.in/income-tax-rules — per-rule \"Download PDF\"; original filename Rule-12_2026-04-02_05-45-05_13cab7_en.pdf",
+      "route": "owner browser retrieval → save-dialog accept (official-source-retrieval.md §3.1) → identified, hashed and registered by K4-SOURCE-02 2026-08-15",
+      "retrievedOn": "2026-08-15",
+      "identityCaveat": "The text does not name 'Income-tax Rules, 1962' either. It is the 1962 Rules on internal evidence: it sits in 'PART III ASSESSMENT PROCEDURE', prescribes returns under sections 139/142/148/153A and disqualifies on sections 115BBDA / 115BBE / 194N / 44AD / 44ADA / 44AE (all 1961-Act sections), and uses 'assessment year' — the 1961-Act term the 2025 Act replaces with 'tax year'.",
+      "whatItUnblocks": [
+        "rule 12(1)(a) proviso disqualifies from Form SAHAJ (ITR-1) a person who 'has total income, exceeding fifty lakh rupees' — the AY 2026-27 itr1_income_ceiling gap (K4-SOURCE-01 report §3.4)."
+      ],
+      "readingHazard": "The proviso's roman-numeral CLAUSE MARKERS are misaligned by one row under BOTH documented extraction modes, because the PDF wraps clause (IG)'s text onto a line whose marker cell already holds the next marker. Only `pdftotext -raw` resolves it. See readingHazards."
+    },
+    {
+      "id": "K4-SOURCE-02-S4",
+      "file": "ITD_Income-tax-Rules-1962_New-Appendix-I_depreciation.pdf",
+      "sha256": "83a58dc404627a652e0a7f23170957c9d719d0626ad490a43d78efcf1fcde036",
+      "bytes": 1005509,
+      "act": "Income-tax Rules, 1962 — NEW APPENDIX I, 'TABLE OF RATES AT WHICH DEPRECIATION IS ADMISSIBLE'",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961 — headed '[See rule 5]' and '[Effective from assessment year 2006-07 onwards]'. THIS IS THE 1962 APPENDIX I, NOT the Income-tax Rules 2026 Appendix I registered as part of K4-PORT-02-S2. The two are the depreciation tables of two different statutory worlds and K4-SOURCE-01 (D301 §5.1) recorded a live conflation of exactly this pair.",
+      "year": "as consolidated, effective from AY 2006-07 onwards with subsequent amendment markers",
+      "stage": "NOTIFIED RULES, as consolidated and published by the department.",
+      "publisher": "Income Tax Department (CBDT), Ministry of Finance",
+      "sourceRank": 2,
+      "sourceRankNote": "Same reasoning as K4-SOURCE-02-S3: rank-1 publisher, rank-2 instrument.",
+      "url": "https://www.incometaxindia.gov.in/income-tax-rules — appendix \"Download PDF\"; original filename NEW-APPENDIX-I_2026-01-23_10-38-44_0eae0e_en.pdf",
+      "route": "owner browser retrieval → save-dialog accept (official-source-retrieval.md §3.1) → identified, hashed and registered by K4-SOURCE-02 2026-08-15",
+      "retrievedOn": "2026-08-15",
+      "whatItUnblocks": [
+        "The Section 32 depreciation blocker (K4-SOURCE-01 report §3.5), open since K4-13 and the top-ranked Wave-4 breadth item. UNBLOCKED IS NOT IMPLEMENTED — holding the rate table makes the work possible; it is its own session."
+      ],
+      "readingHazard": "NOT ONE RATE FROM THIS FILE HAS BEEN READ, QUOTED OR RELIED ON. K4-SOURCE-02 registered it and stopped there deliberately. The `-layout` extraction is ALREADY visibly broken on the first table — item I(4) 'Purely temporary erections' renders with no rate on its line while '1[40]' appears twice offset against the wrong rows. A session implementing depreciation must resolve every rate across all three extraction modes before quoting any of them."
+    },
+    {
+      "id": "K4-SOURCE-02-S5",
+      "file": "Parliament_Finance-Bill-2026_BILL-3-of-2026_as-introduced.pdf",
+      "sha256": "5c98701714c4c473bcd097e376124a4c075881836fe92a5fc4615613c09edabf",
+      "bytes": 1782371,
+      "act": "THE FINANCE BILL, 2026 — BILL No. 3 of 2026",
+      "statutoryWorld": "BOTH, as PROPOSED — clause 2 (Act 43 of 1961) and clause 3 (Act 30 of 2025).",
+      "year": "2026",
+      "stage": "**BILL, AS INTRODUCED IN LOK SABHA. NOT AN ACT.**",
+      "publisher": "Parliament of India (Lok Sabha)",
+      "sourceRank": null,
+      "sourceRankNote": "**OUTSIDE THE RANK LADDER ENTIRELY.** official-source-retrieval.md §5: 'A Bill as introduced sits OUTSIDE this ladder: it is evidence of intent and of probable text, NOT enacted law.' `sourceRank` is deliberately null rather than a number, because giving it one would invite comparison with ranked material.",
+      "url": "owner-supplied download; the enacted counterpart is at https://www.incometaxindia.gov.in/finance-acts",
+      "route": "owner download 2026-08-15 15:40 → identified by K4-SOURCE-01 (correctly NOT used) → registered by K4-SOURCE-02 2026-08-15 before the owner cleared ~/Downloads",
+      "retrievedOn": "2026-08-15",
+      "whyRegisteredAtAll": [
+        "`K4-SOURCE-01` identified this file and correctly declined to use it. It is registered now for ONE reason: the owner was about to delete it, and it is the only artifact that lets a future session check what moved BETWEEN BILL AND ACT for the exact provisions this repository now cites.",
+        "official-source-retrieval.md §4 makes that check matter: 'Bill as introduced != Act as enacted. Numbering and text move between them.'",
+        "**NEVER CITE IT AS LAW.** The enacted text (K4-SOURCE-02-S1 and S2) is what is cited, and it supersedes this for every purpose."
+      ]
+    },
+    {
+      "id": "K4-SOURCE-02-S6",
+      "file": "GoI_Budget-Speech-2026-27.pdf",
+      "sha256": "f874eeb4f4e6c1a3e50340c31ac76815d72a8777cc08c5ac4845701006fcc8fc",
+      "bytes": 678384,
+      "act": "n/a — NOT LAW OF ANY KIND",
+      "statutoryWorld": "n/a",
+      "year": "2026-27",
+      "stage": "Budget speech of the Minister of Finance, 1 February 2026",
+      "publisher": "Government of India, Ministry of Finance",
+      "sourceRank": null,
+      "sourceRankNote": "**NOT LAW AND NOT ON THE LADDER.** A political and policy statement. It ranks BELOW portal help text, which is §5's lowest tier, because help text at least purports to describe the law.",
+      "url": "owner-supplied download",
+      "route": "owner download 2026-08-15 15:41 → identified by K4-SOURCE-01 (correctly NOT used) → registered by K4-SOURCE-02 2026-08-15 before the owner cleared ~/Downloads",
+      "retrievedOn": "2026-08-15",
+      "whyRegisteredAtAll": [
+        "Preserved against irreversible deletion, and for nothing else. It may be read for CONTEXT on why a provision was changed.",
+        "**IT MAY NEVER BE CITED FOR ANY FIGURE, RATE, THRESHOLD OR TREATMENT.** If a session finds itself reaching for this document to support a number, that is the signal that the number is unsourced."
+      ]
+    },
+    {
+      "id": "K4-PORT-00-S2",
+      "file": "ITD_Income-tax-Act-2025_as-enacted-as-amended-2026-06-10.pdf",
+      "sha256": "7db7feb6fa5493c74febd1548020f126acb837e874677c4f889545aff958f8b7",
+      "bytes": 106789007,
+      "act": "Income-tax Act, 2025",
+      "year": "2025, as amended 2026",
+      "stage": "ENACTED — [30 OF 2025], assented 21-8-2025, as amended by Finance Act, 2026",
+      "publisher": "Income Tax Department (CBDT), Ministry of Finance",
+      "sourceRank": 1,
+      "url": "https://www.incometaxindia.gov.in/documents/20117/43006/Income-tax-Act-2025_2026_2026-06-10_03-46-08_691051_en.pdf/b6240d88-c54c-d2b6-04ee-5703d0bcde4f?version=6.0",
+      "route": "browser (URL discovery) → owner save-dialog accept → pdftotext",
+      "retrievedOn": "2026-08-14",
+      "note": "Already registered by K4-PORT-00. Its SHA-256 is recorded here for the first time; the register entry carried the URL and size but no hash."
+    },
+    {
+      "id": "K4-PORT-02-S1",
+      "file": "ICAI_Income-tax-Act-2025_as-amended-by-Finance-Act-2026.pdf",
+      "sha256": "e1101c2acca2e3b29036a426739052409135d561cbf19d97f6d58a38cd5fdff5",
+      "bytes": 16731422,
+      "act": "Income-tax Act, 2025 (as amended by the Finance Act, 2026)",
+      "year": "2026 edition",
+      "stage": "ENACTED text, reproduced by a professional body — NOT the Gazette",
+      "publisher": "The Institute of Chartered Accountants of India (ICAI), Direct Taxes Committee",
+      "sourceRank": 2,
+      "sourceRankNote": "A REPRODUCTION of rank-1 material, not the Gazette itself. Usable as evidence; a load-bearing quote should be corroborated against the Gazette or the ITD's own publication (K4-PORT-00-S2 / the ITD /finance-acts pages).",
+      "url": "owner-supplied download from ICAI (resource.cdn.icai.org), original filename 91774dtc-aps4792.pdf",
+      "route": "owner download 2026-08-14 14:00 → identified and hashed by K4-PORT-02 2026-08-15",
+      "retrievedOn": "2026-08-14",
+      "scopeLimit": {
+        "$comment": "ADDED BY K4-SOURCE-01 (D301), CORRECTING 'IN FULL' BELOW. Read this before concluding any AY 2026-27 gap is closable from this artifact.",
+        "claim": "This is the Finance Act, 2026 AS REPRODUCED INSIDE AN INCOME-TAX ACT 2025 EDITION. It reproduces only the 2025-Act-relevant portions. THE ENTIRE 1961-ACT HALF IS OMITTED, elided with the edition's own '* * *' marker.",
+        "present": [
+          "s.3 (Income-tax under Act 30 of 2025)",
+          "First Schedule Part I-B",
+          "Chapter III Part B (amendments to the 2025 Act)"
+        ],
+        "OMITTED": [
+          "s.2 (Income-tax under Act 43 of 1961)",
+          "First Schedule Part I-A ('A.--Income-tax')",
+          "Chapter III Part A (amendments to the 1961 Act)"
+        ],
+        "establishedBy": "Chapter II's contents list reads '** *' then jumps to s.3; the First Schedule is headed '(See sections 2 and 3)' yet opens at 'PART I / B.--Income-tax under the Income-tax Act, 2025'; and 'under Act 43 of 1961', 'A.--Income-tax' and 'Part I-A' each occur ZERO times in the full 53,367-line -layout extraction.",
+        "consequence": "Holding this does NOT close the AY 2026-27 surcharge or cess citation gaps. Those need Finance Act 2026 s.2 and First Schedule Part I-A, retrievable from incometaxindia.gov.in/finance-acts (browser 200, 167 sections, per-section Download PDF) under the owner save-dialog handoff — one owner action per section."
+      },
+      "whyItMatters": [
+        "CONTAINS THE FINANCE ACT, 2026 as an appendix — the document the programme recorded as 'not held here'. THE PHRASE 'IN FULL' STOOD HERE UNTIL K4-SOURCE-01 AND WAS WRONG: see scopeLimit above, which is the load-bearing qualification.",
+        "Finance Act 2026 s.3(1) charges tax year 2026-27 at the rates in Part I-B of its First Schedule, which is the 'Central Act' ITA 2025 s.4(1) refers to. s.3 serves the 2025 Act ONLY; s.2 serves the 1961 Act and is omitted here.",
+        "First Schedule Part I-B Paragraph A carries the OLD-REGIME slab tables including the resident senior (60-80) and SUPER-SENIOR (80+) bands, whose survival into tax year 2026-27 D298 recorded as unsourced and not to be assumed. These are TAX YEAR 2026-27 / 2025-Act bands, not AY 2026-27 ones.",
+        "s.3(15) and s.3(16) state the Health and Education Cess at 4% in PROSE (not a table) — for the 2025-Act world only.",
+        "Also carries a tabular mapping of Income-tax Act 2025 sections against the 1961 Act."
+      ],
+      "ownerBackup": true,
+      "ownerBackupNote": "OWNER-CONFIRMED OFF-REPOSITORY BACKUP (2026-08-15). The owner holds this artifact on a local hard drive AND in cloud storage, and can re-supply it on request. This is what closes the recoverability gap for an artifact whose `url` is a description rather than a fetchable address. It is recorded as a FIELD rather than as prose so `check:statutory-extracts` can read it — a mitigation that only a human can see is one the next session will re-raise as a risk. IT IS NOT A SUBSTITUTE FOR RANK: these remain rank-2 reproductions, and a load-bearing quote still needs corroboration against rank-1 material."
+    },
+    {
+      "id": "K4-PORT-02-S2",
+      "file": "ICAI_Income-tax-Rules-2026.pdf",
+      "sha256": "4feb237e16a53bd18c4a7e2c74f24e23355eb4db58f82b8696a5889321663515",
+      "bytes": 10579471,
+      "act": "Income-tax Rules, 2026",
+      "year": "2026",
+      "stage": "NOTIFIED RULES, reproduced by a professional body — NOT the Gazette",
+      "primarySource": "CBDT Notification No. 64/2026, [F. No. 370142/41/2025-TPL] / GSR 286(E), dated 16 April 2026, corrigendum incorporated",
+      "publisher": "The Institute of Chartered Accountants of India (ICAI), Direct Taxes Committee",
+      "sourceRank": 2,
+      "sourceRankNote": "A REPRODUCTION that names its own primary source (the CBDT notification and GSR number), so corroboration against the Gazette is a checkable, bounded task.",
+      "url": "owner-supplied download from ICAI (resource.cdn.icai.org), original filename 91688dtc-aps4735.pdf",
+      "route": "owner download 2026-08-14 14:01 → identified and hashed by K4-PORT-02 2026-08-15",
+      "retrievedOn": "2026-08-14",
+      "scopeLimit": {
+        "$comment": "ADDED BY K4-SOURCE-01 (D301). THE SINGLE MOST LIKELY WAY TO MISUSE THIS ARTIFACT.",
+        "claim": "These Rules are made under, and serve, the INCOME-TAX ACT, 2025 ONLY. Rule 2321 defines: \"(a) 'Act' means the Income-tax Act, 2025 (30 of 2025);\".",
+        "consequence": "Appendix I here sources depreciation for the 2025-Act (tax year) world and for NOTHING ELSE. The AY 2026-27 engine computes under the 1961 Act, whose depreciation rates live in INCOME-TAX RULES, 1962 APPENDIX I — still unretrieved. The Section 32 blocker is UNCHANGED.",
+        "doNotInfer": "The ITD mapping (K4-PORT-00-S1, rank 4) says Rule 5 -> Rule 25. A mapping establishes that a counterpart EXISTS; it never establishes that two provisions SAY THE SAME THING (official-source-retrieval.md §5)."
+      },
+      "whyItMatters": [
+        "THIS IS THE INCOME-TAX RULES 2026 TEXT that AUDIT-10-F4 records as unretrieved by any route.",
+        "Rule 25 is Depreciation and Appendix I is the table of depreciation rates. THIS LINE PREVIOUSLY CALLED IT 'the exact Appendix I the depreciation blocker is waiting on'; K4-SOURCE-01 corrected that forward — it is the Appendix the 2025-Act s.33 blocker waits on, NOT the 1961-Act Section 32 one. See scopeLimit above.",
+        "Rule 164(2)/(3)(k) prescribes Form SAHAJ (ITR-1) and states the fifty-lakh ITR-1 total-income ceiling — cited by K4-SOURCE-01 as K4-SOURCE-01-S1, cross-checked in both pdftotext modes.",
+        "Rule 245 / Form No. 168 is the ANNUAL INFORMATION STATEMENT (parallel to Form 26AS under the Rules 1962) — NOT a return form. The repository asserted the opposite at eight src/ sites until K4-SOURCE-01 read this text.",
+        "Also carries a tabular mapping of Rules and Forms against the Income-tax Rules 1962."
+      ],
+      "ownerBackup": true,
+      "ownerBackupNote": "OWNER-CONFIRMED OFF-REPOSITORY BACKUP (2026-08-15). The owner holds this artifact on a local hard drive AND in cloud storage, and can re-supply it on request. This is what closes the recoverability gap for an artifact whose `url` is a description rather than a fetchable address. It is recorded as a FIELD rather than as prose so `check:statutory-extracts` can read it — a mitigation that only a human can see is one the next session will re-raise as a risk. IT IS NOT A SUBSTITUTE FOR RANK: these remain rank-2 reproductions, and a load-bearing quote still needs corroboration against rank-1 material."
+    },
+    {
+      "id": "OPS-14-S2",
+      "file": "CBDT_FAQs-on-Transition-Provisions_370149-107-2026-TPL.pdf",
+      "sha256": "2c21e2daa355b8e1d145761ce0556533ba8d4d90da009b851500a0eb5fc5934c",
+      "bytes": 225620,
+      "act": "n/a — administrative guidance on Income-tax Act, 2025 s.536 transition provisions",
+      "year": "2026",
+      "stage": "CBDT Office Memorandum / FAQs",
+      "publisher": "Central Board of Direct Taxes, TPL Division (F. No. 370149/107/2026-TPL)",
+      "sourceRank": 3,
+      "url": "https://www.incometaxindia.gov.in/documents/20117/43120/FAQs-on-Transition-Provisions.pdf/2d93bf1c-70d8-faa0-e14a-5bdcde2474c6",
+      "urlNote": "ADDED BY K4-SOURCE-02. This entry said only 'owner-supplied download' and so appeared NON-RE-RETRIEVABLE, when `official-source-retrieval.md` §6's OPS-14-S2 register entry had carried the exact URL all along. A recoverability audit of the manifest is what surfaced it — the register and the manifest had drifted apart on the one field that decides whether a lost artifact can be recovered.",
+      "route": "owner download 2026-08-14 21:12 → hashed by K4-PORT-02 2026-08-15",
+      "retrievedOn": "2026-08-14",
+      "note": "Already registered by OPS-14 as OPS-14-S2. Its SHA-256 is recorded here for the first time. Administrative only — its FAQs concern departmental procedure and say nothing about any figure this product computes."
+    },
+    {
+      "id": "K4-PORT-04-S1",
+      "file": "Gazette_Finance-Act-2026_No-4-of-2026_complete.pdf",
+      "sha256": "f01136356e61b2534328153941a68f13afd06fe8587d347757c89101d9cc564f",
+      "bytes": 1600615,
+      "act": "THE FINANCE ACT, 2026 (NO. 4 OF 2026) — COMPLETE, as published in the Gazette",
+      "statutoryWorld": "BOTH, AND IT IS THE FIRST ARTIFACT THAT CARRIES BOTH HALVES OF THIS ACT AT GAZETTE RANK. Section 2 + First Schedule Part I-A/IV-A serve AY 2026-27 / INCOME-TAX ACT, 1961; section 3 + First Schedule Part I-B/IV-B serve TY 2026-27 / INCOME-TAX ACT, 2025. Parts II and III of the First Schedule serve the 2025 Act throughout. NAME THE SECTION AND THE PART WHENEVER YOU CITE THIS FILE.",
+      "year": "2026",
+      "stage": "ENACTED — THE GAZETTE OF INDIA, EXTRAORDINARY, PART II Section 1, No. 9, New Delhi, Monday, March 30, 2026 / Chaitra 9, 1948 (Saka). Ministry of Law and Justice (Legislative Department). Assented by the President on 30 March 2026. Digitally signed 2026-03-31. THIS IS THE GAZETTE ITSELF, not a reproduction and not a departmental publication.",
+      "publisher": "Ministry of Law and Justice (Legislative Department), Government of India — Controller of Publications",
+      "sourceRank": 1,
+      "sourceRankNote": "RANK 1 AT THE TOP OF THE LADDER: official-source-retrieval.md §5 rank 1 is 'Statute as enacted (Gazette)'. Every OTHER Finance Act 2026 artifact held here is recorded rank 1 but discloses 'NOT the Gazette' in its citation string, because they are ITD departmental publications or an ICAI reproduction. THIS ONE IS THE GAZETTE, so a citation resting on it needs no such disclaimer — and that is the ONLY artifact in the register for which that is true.",
+      "url": "https://www.incometaxindia.gov.in/documents/d/guest/finance-act-2026-pdf-1",
+      "route": "OWNER-SUPPLIED 2026-08-17, after K4-PORT-04 recorded rank-1 corroboration for section 3 as OWED. Retrieved by the owner from the URL above; identified, hashed and registered by K4-PORT-04 the same day. 122 PDF pages.",
+      "retrievedOn": "2026-08-17",
+      "structure": {
+        "CHAPTER II (pages 2-29)": "THE CHARGING SECTIONS, BOTH WORLDS. s.2 'Income-tax under Act 43 of 1961' (page 9) incl. s.2(3) Chapter XII routing and s.2(6) cess at 'four per cent.'; s.3 'Income-tax under Act 30 of 2025' (pages 10-29) incl. s.3(1) charging at Part I-B rates, s.3(3) Chapter XIII Part A-D routing, s.3(15)/(16) cess at 4% and s.3(18) definitions.",
+        "CHAPTER III-VI (pages 30-79)": "Amendments to the two Acts and to other enactments. Cited by nothing here.",
+        "THE FIRST SCHEDULE (pages 80-106)": "PART I (80-87): A.--Income-tax under the Income-tax Act, 1961 (Paragraph A slab tables incl. resident 60-80 and 80+; Paragraph F surcharge + marginal relief) then B.--Income-tax under the Income-tax Act, 2025 (the same shape for the tax year). PART II (88-95) TDS rates. PART III (96-100) advance-tax rates. PART IV (101-106) net-agricultural-income rules, A and B.",
+        "SECOND-SIXTH SCHEDULES (pages 107-122)": "Customs/excise tariff amendments. Cited by nothing here."
+      },
+      "whatItUnblocks": [
+        "GAZETTE-RANK BACKING FOR EVERY FINANCE ACT 2026 CITATION IN BOTH PACKS. Today the AY pack cites s.2(6) and First Schedule Part I-A to ITD publications, and the TY pack cites s.3 to ICAI's reproduction and Part I-B to an ITD publication — every one of those citation strings discloses 'NOT the Gazette'. This artifact is what would let those disclaimers be retired. [K4-CITE-01, D315: they ARE now retired - 29 spans re-pointed to this artifact's committed extracts; the 13 Part I-B AMOUNT spans stay on K4-SOURCE-02-S2 for the rupee-glyph reason.]",
+        "THE ITEM K4-PORT-04 RECORDED AS OWED: rank-1 corroboration for Finance Act 2026 s.3(1), s.3(3) and s.3(15). All three are here — s.3(1)/(3) on pages 9-10 and s.3(15) on page 29 — and every span the TY pack declares from ICAI's s.3 was verified present in this document.",
+        "It is the first artifact in the register that carries s.2 AND s.3 AND both halves of First Schedule Part I in ONE document with ONE re-retrievable URL."
+      ],
+      "readingHazard": "THREE HAZARDS, ALL MEASURED ON THIS ARTIFACT. (1) THE RUPEE GLYPH DOES NOT EXTRACT IN PART I-B. The Gazette prints the 2025-Act amounts with the rupee sign and pdftotext drops it, so the text reads 'exceed  250000' and ' 12500 plus 20%' with a leading blank. The ITD copy (K4-SOURCE-02-S2) prints the same amounts as 'Rs. 250000', which extracts cleanly. SO FOR A QUOTABLE PART I-B SPAN THE LOWER-RANKED ITD COPY IS BETTER EVIDENCE THAN THE GAZETTE — the higher authority is the harder one to quote, and a re-citation session must decide that per span rather than assume the Gazette wins everywhere. Part I-A is unaffected; it prints 'Rs. 2,50,000'. (2) -layout SPLITS THE MARGINAL NOTES INTO THE TEXT COLUMN, so s.3(1)'s charging words do not appear as a contiguous string in that mode; the default and -raw modes both carry them. Cross-check all three (§3.2). (3) SEVEN BYTES ARE NON-UTF8 (the Devanagari masthead and the rupee glyphs) and decode to replacement characters. The English statutory text is otherwise clean.",
+      "textualDifferenceFromTheDepartmentalCopies": "Part I-B here omits '(30 of 2025)' after 'Income-tax Act, 2025' where the ITD copy carries it, and renders amounts with the rupee sign rather than 'Rs.'. Neither changes a figure. Recorded because a span quoted from one publication may not match the other, which is a checkable-quote problem rather than a legal one."
+    },
+    {
+      "id": "K4-PORT-04-S2",
+      "file": "ITD_Income-tax-Act-1961_consolidated_as-amended-by-Finance-Act-2025.pdf",
+      "sha256": "626134660ea5ca236d967eb5ed7d7b989d48f3240f0c4dfaa57dc09846288ff5",
+      "bytes": 5371727,
+      "act": "INCOME-TAX ACT, 1961 [43 OF 1961] - THE CONSOLIDATED ACT, AS AMENDED BY FINANCE ACT, 2025. Complete: section 1 to section 298 and the Second to Fourteenth Schedules. 916 PDF pages.",
+      "statutoryWorld": "AY 2026-27 / INCOME-TAX ACT, 1961. This is the LIVE engine's own Act. It reaches the TY 2026-27 world only where a caveat quotes it FOR CONTRAST - see whatItUnblocks.",
+      "year": "2025 amendment vintage",
+      "stage": "CONSOLIDATION, as amended by Finance Act, 2025 (Act No. 7 of 2025). NOT the Gazette and NOT a bare enactment: it is a consolidated reprint carrying the base 1961 text with later amendments folded in. Its own front note states that Act No. 7 of 2025 amendments are \"printed in italics and enclosed with bold square brackets\" and the Act No. 8 of 2024 / No. 15 of 2024 amendments in medium square brackets - an EDITORIAL apparatus, not statutory text.",
+      "publisher": "NOT ESTABLISHED FROM THE DOCUMENT. It carries no title page, imprint, publisher name or Gazette masthead - only \"INCOME-TAX ACT, 1961* [43 OF 1961] [AS AMENDED BY FINANCE ACT, 2025]\" and the editorial front note. The owner supplied it alongside content from incometaxindia.gov.in and the annotation style matches the Income Tax Department's own consolidated reprint, but THAT IS AN INFERENCE AND IS RECORDED AS ONE. A load-bearing quote wants corroboration until this is settled.",
+      "sourceRank": 2,
+      "sourceRankNote": "RANK 2, DELIBERATELY, AND LOWER THAN THE OTHER ITD ARTIFACTS HERE, FOR TWO INDEPENDENT REASONS. (1) It is a CONSOLIDATION with editorial annotation, not statute as enacted - official-source-retrieval.md section 5 puts \"Statute as enacted (Gazette)\" at rank 1. (2) Its publisher is not established from the document itself, so it cannot be recorded as a departmental publication the way K4-SOURCE-02-S1/S2 can. Both reasons are removable: a Gazette copy, or a confirmed publisher and URL, would move it.",
+      "url": "NOT SUPPLIED. The owner provided the file directly. The Income Tax Department publishes a consolidated Act at incometaxindia.gov.in, so a fetchable URL probably exists and has NOT been recorded - ASK before treating this artifact as re-retrievable by URL.",
+      "route": "OWNER-SUPPLIED 2026-08-17, in answer to K4-PORT-04 recording the consolidated Income-tax Act, 1961 as the largest remaining evidence gap (AUDIT-10-F4). Identified, hashed and registered the same day; completeness verified by locating s.1, s.298 and the Fourteenth Schedule rather than trusting the filename.",
+      "retrievedOn": "2026-08-17",
+      "ownerBackup": true,
+      "ownerBackupNote": "OWNER-SUPPLIED AND RE-SUPPLIABLE (2026-08-17). Recorded as a FIELD rather than prose so check:statutory-extracts can read it - the same treatment as the two ICAI editions. It is NOT a substitute for a URL: see the url field, which asks for one.",
+      "whatItUnblocks": [
+        "AUDIT-10-F4's HEADLINE ITEM: \"the consolidated Income-tax Act 1961 as amended, by any route tested\" - unretrieved since AUDIT-10 and now held. Verified COMPLETE: s.1 (page 1) through s.298 (page 872) plus the Second to Fourteenth Schedules.",
+        "EXACTLY ONE currently-unverifiable quoted span, and that count is the finding - see correctsAStandingClaim below. The TY pack's business_books_computation caveat quotes 1961 s.29 (\"in accordance with the provisions contained in sections 30 to 43D\") FOR CONTRAST with the 2025 Act's s.27, and MAINT-03 found that span matching only off a READING NOTE in an extract - one of the two live false passes D308 records. It is on page 137 here and is now genuinely checkable.",
+        "It PAIRS with K4-PORT-04-S1 to give the complete current 1961-Act picture: this consolidation carries the Act to Finance Act 2025, and the Gazette artifact's Chapter III (pages 30-79) carries Finance Act 2026's amendments TO it, which this document predates."
+      ],
+      "correctsAStandingClaim": {
+        "$comment": "ADDED BY K4-PORT-04. Registering this artifact MEASURED a claim the corpus had been carrying, and the claim was wrong.",
+        "theClaim": "the project status notes and verbatim-quotes.test.ts both describe the 43 spans declared QUOTE_SOURCE_NOT_REGISTERED as \"43 quote a source this repository holds no artifact for, HEADED BY the consolidated Income-tax Act, 1961, still unretrieved\".",
+        "theMeasurement": "42 of the 43 are in the AY pack and exactly ONE is in the TY pack. The consolidated 1961 Act accounts for that one. The other 42 quote ITD help pages, e-filing portal prose and secondary tax-law publishers - \"Up to Rs. 50 lakhs\", \"file return in the ITR-4 form (Sugam)\", \"optimal approach\", \"this is only a guideline\" and the like.",
+        "consequence": "The 1961 Act HEADS NOTHING in that set, so registering it makes exactly ONE reason string stale rather than 43. The other 42 are NOT fixable by acquiring any artifact, because they are not quotations of statute at all: they would have to be re-declared QUOTE_NOT_STATUTORY_TEXT or removed from the caveats. That is a separate, larger and purely editorial job, and it is now the honest description of that gap."
+      },
+      "readingHazard": "THE EDITORIAL BRACKETS SIT INSIDE THE QUOTED WORDS, which is the QUOTE_ANNOTATION_STRIPPED hazard already in the vocabulary (rule 12's \"1st day of April, 94[2026]\"). Amendment footnote markers and bracketed substitutions appear mid-sentence throughout, so a faithful quotation of a consolidated provision is frequently NOT byte-identical to this artifact's text - check per span. SEPARATELY: several provisions the packs care about did not match a naive line-based search because the text WRAPS - s.29's \"sections 30 to 43D\", s.115BAC's heading, s.43(5) and Explanation 2 to s.28 were all found only after normalising whitespace. Do not conclude a provision is absent from a grep.",
+      "vintageLimit": {
+        "claim": "AS AMENDED BY FINANCE ACT, 2025 (Act No. 7 of 2025). \"Finance Act, 2026\" and \"Act No. 4 of 2026\" occur ZERO times in the full extraction - verified, not assumed.",
+        "whyThatIsTheRightVintageForMostPurposes": "The engine computes AY 2026-27, which assesses FY 2025-26 and is governed by the Finance Act, 2025. The Act's PROVISIONS at this vintage are the ones AY 2026-27 is assessed under.",
+        "whyItIsStillALimit": "Finance Act 2026 also amends the 1961 Act (its Chapter III Part A), and any such amendment effective from AY 2026-27 is NOT in this document. Those amendments ARE held - in K4-PORT-04-S1's Chapter III, pages 30-79 of the Gazette - but that page range is NOT among the committed extracts. Do not treat this consolidation as the current 1961 Act without checking the Gazette's Chapter III for the provision in question."
+      }
+    },
+    {
+      "id": "K4-23-S1",
+      "file": "Gazette_CBDT_Notification-44-2017_CII-FY-2001-02-to-2017-18.pdf",
+      "sha256": "0d984552c44640d356fa93ca5dc491228ad89b582ce0e4019f22213a434090df",
+      "bytes": 1275508,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. It supplies Cost Inflation Index values the section 112 second-proviso comparison needs. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification dated 2017-06-05; supplies FY 2001-02 (100) through FY 2017-18 (272), serials 1 to 17",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 1790(E); Notification No. 44/2017. Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 44/2017",
+      "gazetteNumber": "S.O. 1790(E)",
+      "notificationDate": "2017-06-05",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2017/176464.pdf",
+      "route": "official e-Gazette direct PDF GET → local artifact bytes → SHA-256 → pdftotext -raw, -layout and default; the S.O. number and every index value were READ FROM THE FETCHED BYTES, never inferred from a filename or a search result",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "The PRINCIPAL notification. Table serials 1-17: 2001-02:100, 2002-03:105, 2003-04:109, 2004-05:113, 2005-06:117, 2006-07:122, 2007-08:129, 2008-09:137, 2009-10:148, 2010-11:167, 2011-12:184, 2012-13:200, 2013-14:220, 2014-15:240, 2015-16:254, 2016-17:264, 2017-18:272.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index values it carries: FY 2001-02 (100) through FY 2017-18 (272), serials 1 to 17.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide the section 112 comparison mechanics, which are the owner's decision under D337.",
+        "It does not supply the values for FY 2018-19 to FY 2022-23, whose notifications are NOT registered here.",
+        "It does not establish section 54/54F eligibility, nor resolve sections 49 or 50, agricultural-land, loss or set-off cases."
+      ],
+      "readingHazard": "Bilingual. The Hindi text layer is degraded; the English layer is clean. -raw and -layout keep each table row on one line; default extraction splits the cells column-major but preserves their order."
+    },
+    {
+      "id": "K4-23-S2",
+      "file": "Gazette_CBDT_Notification-39-2023_CII-FY-2023-24.pdf",
+      "sha256": "1e1d51761fdfbd53dec2138d08ae8ddec119cf4ff895673ace0668b17d048e57",
+      "bytes": 1043020,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. It supplies Cost Inflation Index values the section 112 second-proviso comparison needs. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification dated 2023-06-12; supplies FY 2023-24 = 348",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 2571(E); Notification No. 39/2023. Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 39/2023",
+      "gazetteNumber": "S.O. 2571(E)",
+      "notificationDate": "2023-06-12",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2023/246459.pdf",
+      "route": "official e-Gazette direct PDF GET → local artifact bytes → SHA-256 → pdftotext -raw, -layout and default; the S.O. number and every index value were READ FROM THE FETCHED BYTES, never inferred from a filename or a search result",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "After serial number 22, insert: serial 23 / Financial Year 2023-24 / Cost Inflation Index 348.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index values it carries: FY 2023-24 = 348.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide the section 112 comparison mechanics, which are the owner's decision under D337.",
+        "It does not supply the values for FY 2018-19 to FY 2022-23, whose notifications are NOT registered here.",
+        "It does not establish section 54/54F eligibility, nor resolve sections 49 or 50, agricultural-land, loss or set-off cases."
+      ],
+      "readingHazard": "Bilingual. The Hindi text layer is degraded; the English layer is clean. -raw and -layout keep each table row on one line; default extraction splits the cells column-major but preserves their order."
+    },
+    {
+      "id": "K4-23-S3",
+      "file": "Gazette_CBDT_Notification-44-2024_CII-FY-2024-25.pdf",
+      "sha256": "5424b37f39c494c49bd6e1c38848ae1a225a0c87450ed76198861373ee2d96ec",
+      "bytes": 766778,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. It supplies Cost Inflation Index values the section 112 second-proviso comparison needs. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification dated 2024-05-24; supplies FY 2024-25 = 363",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 2103(E); Notification No. 44/2024. Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 44/2024",
+      "gazetteNumber": "S.O. 2103(E)",
+      "notificationDate": "2024-05-24",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2024/254329.pdf",
+      "route": "official e-Gazette direct PDF GET → local artifact bytes → SHA-256 → pdftotext -raw, -layout and default; the S.O. number and every index value were READ FROM THE FETCHED BYTES, never inferred from a filename or a search result",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "After serial number 23, insert: serial 24 / Financial Year 2024-25 / Cost Inflation Index 363.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index values it carries: FY 2024-25 = 363.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide the section 112 comparison mechanics, which are the owner's decision under D337.",
+        "It does not supply the values for FY 2018-19 to FY 2022-23, whose notifications are NOT registered here.",
+        "It does not establish section 54/54F eligibility, nor resolve sections 49 or 50, agricultural-land, loss or set-off cases."
+      ],
+      "readingHazard": "Bilingual. The Hindi text layer is degraded; the English layer is clean. -raw and -layout keep each table row on one line; default extraction splits the cells column-major but preserves their order."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR1-SCHEMA",
+      "file": "ITD_eFiling_ITR-1_JSON-Schema_AY-2026-27_v1.1.json",
+      "sha256": "6a0ef9f64065431879dcc724869d8455a640bcf11279d1818eb19f11448ce763",
+      "bytes": 148921,
+      "act": "Income-tax Act, 1961 - ITR-1 electronic return data contract",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; portal release 2026-06-30; download-page artifact version 1.1",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - JSON Schema, not a statute, rule, notification, circular, or tax decision.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing portal",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER.",
+      "sourceRank": null,
+      "sourceRankNote": "Outside the statutory-source rank ladder: this is the portal's machine-readable filing contract. It is authoritative for accepted JSON shape, not for deciding tax law.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/ITR-1_2026_Main_V1.1.json",
+      "route": "official e-Filing downloads page -> direct public JSON GET -> local artifact bytes -> SHA-256 -> JSON parse and identity-field inspection",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Root #/definitions/ITR; Form_ITR1; FormName ITR-1; AssessmentYear 2026; embedded SchemaVer/FormVer Ver1.0.",
+      "whatItEstablishes": [
+        "The exact AY 2026-27 ITR-1 JSON object shape and schema constraints published by the portal."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not establish eligibility, compute tax, override the notified form, or authorize implementation in this retrieval session."
+      ],
+      "readingHazard": "The download-page artifact is version 1.1, while the embedded Form_ITR1 SchemaVer and FormVer patterns remain Ver1.0. Preserve both facts; do not normalize one into the other. JSON has no PDF page ranges, so no whole-schema text copy is committed."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR1-CHANGES",
+      "file": "ITD_eFiling_ITR-1_Schema-Change_AY-2026-27_v1.1.pdf",
+      "sha256": "86fd1bcf287877b5a4c8ff091cc57ddcfd51d21fc41260eacec4ca070811b393",
+      "bytes": 226726,
+      "act": "Income-tax Act, 1961 - ITR-1 electronic return schema change record",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; version 1.1 dated 2026-06-30; original schema dated 2026-05-15",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - schema change document, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing portal",
+      "sourceRank": null,
+      "sourceRankNote": "Outside the statutory-source rank ladder; technical release evidence only.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR%201_Schema%20change%20document_AY2026-27_V1.1.pdf",
+      "route": "official e-Filing downloads page -> direct public PDF GET -> local bytes -> SHA-256 -> visual page review -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Page 5 records ExemptIncAgriOthUs10.SubCategory modified (description and enum updated) and ExemptIncAgriOthUs10.Description modified (new field added).",
+      "whatItEstablishes": [
+        "The portal's recorded delta from the 15 May 2026 ITR-1 schema to the 30 June 2026 release."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not itself supply the full current schema or decide any tax treatment."
+      ],
+      "readingHazard": "The page-5 table is columnar. -layout and default separate some row labels from their cells; -raw gives the clearest row-major pairing. All three preserve the two modifications."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR1-VALIDATIONS",
+      "file": "ITD_eFiling_ITR-1_Validation-Rules_AY-2026-27_v1.0.pdf",
+      "sha256": "fd0e447af6c0a6ed43c29697722c4d469f42d5e7a0bad54e21bd4600803a100a",
+      "bytes": 555796,
+      "act": "Income-tax Act, 1961 - ITR-1 portal validation rules",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; version 1.0 dated 2026-05-15",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - validation rules, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing project",
+      "sourceRank": 5,
+      "sourceRankNote": "Portal technical/help material is rank 5 and cannot decide a tax question.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf",
+      "route": "official e-Filing downloads page -> direct public PDF GET -> local bytes -> SHA-256 -> visual page review -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Validation Rules v1.0; Category A begins page 5, Category B and D page 22. Page 5 begins with the old-regime aggregate deduction rule for sections 80C, 80CCC and 80CCD(1).",
+      "whatItEstablishes": [
+        "The portal's published AY 2026-27 ITR-1 validation catalogue and defect categories."
+      ],
+      "whatItDoesNotEstablish": [
+        "A portal validation is not a substantive-law holding and this registration implements none of it."
+      ],
+      "readingHazard": "Default mode inserts extra line breaks within rows; -raw best preserves serial-to-scenario order. The extract is deliberately limited to pages 4-6, not the whole 22-page catalogue."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR4-SCHEMA",
+      "file": "ITD_eFiling_ITR-4_JSON-Schema_AY-2026-27_v1.1.json",
+      "sha256": "5e9af50083ad92faa684a02ae51693189b43df16b92c1da5a184026fc5cdc2ac",
+      "bytes": 252342,
+      "act": "Income-tax Act, 1961 - ITR-4 electronic return data contract",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; portal release 2026-06-30; download-page artifact version 1.1",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - JSON Schema, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing portal",
+      "sourceRank": null,
+      "sourceRankNote": "Outside the statutory-source rank ladder; machine-readable filing contract only.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR-4_2026_Main_V1.1.json",
+      "route": "official e-Filing downloads page -> direct public JSON GET -> local artifact bytes -> SHA-256 -> JSON parse and identity-field inspection",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Root #/definitions/ITR; Form_ITR4; FormName ITR-4; AssessmentYear 2026; embedded SchemaVer/FormVer Ver1.0.",
+      "whatItEstablishes": [
+        "The exact AY 2026-27 ITR-4 JSON object shape and schema constraints published by the portal."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not establish ITR-4 eligibility, compute tax, or authorize implementation."
+      ],
+      "readingHazard": "The download-page artifact is version 1.1, while embedded SchemaVer/FormVer remain Ver1.0. JSON has no PDF page ranges, so no whole-schema text copy is committed."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR4-CHANGES",
+      "file": "ITD_eFiling_ITR-4_Schema-Change_AY-2026-27_v1.1.pdf",
+      "sha256": "7c0d26879efa589e4a387bcd980a516c58ab52d91990d437b6cddc1a9e7695a5",
+      "bytes": 225294,
+      "act": "Income-tax Act, 1961 - ITR-4 electronic return schema change record",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; version 1.1 dated 2026-06-30; original schema dated 2026-05-15",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - schema change document, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing portal",
+      "sourceRank": null,
+      "sourceRankNote": "Outside the statutory-source rank ladder; technical release evidence only.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR%204_Schema%20change%20document_AY2026-27_V1.1_0.pdf",
+      "route": "official e-Filing downloads page -> direct public PDF GET -> local bytes -> SHA-256 -> visual page review -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Page 5 records ExemptUs10.SubCategory modified (description and enum updated) and ExemptUs10.Description modified (new field added).",
+      "whatItEstablishes": [
+        "The portal's recorded delta from the 15 May 2026 ITR-4 schema to the 30 June 2026 release."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not itself supply the full current schema or decide tax treatment."
+      ],
+      "readingHazard": "Default mode splits the change table column-major; -raw preserves the two row pairings most clearly."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR4-VALIDATIONS",
+      "file": "ITD_eFiling_ITR-4_Validation-Rules_AY-2026-27_v1.0.pdf",
+      "sha256": "769a8f71aa22c4f9a9e052006e8423a78c4cb130d33088fcdfdeaca9aae126f4",
+      "bytes": 652474,
+      "act": "Income-tax Act, 1961 - ITR-4 portal validation rules",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; version 1.0 dated 2026-05-15",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - validation rules, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing project",
+      "sourceRank": 5,
+      "sourceRankNote": "Portal technical/help material is rank 5 and cannot decide a tax question.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%204_Validation%20Rules_AY%202026-27.pdf",
+      "route": "official e-Filing downloads page -> direct public PDF GET -> local bytes -> SHA-256 -> visual page review -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Validation Rules v1.0; page 5 defines defect categories A, B and D and begins Category A rules.",
+      "whatItEstablishes": [
+        "The portal's published AY 2026-27 ITR-4 validation catalogue and defect categories."
+      ],
+      "whatItDoesNotEstablish": [
+        "It is not a substantive-law holding and this session implements no validations."
+      ],
+      "readingHazard": "Default mode merges the D category marker into its action text; -layout and -raw preserve the category/action separation. Extract limited to pages 5-7."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR2-SCHEMA",
+      "file": "ITD_eFiling_ITR-2_JSON-Schema_AY-2026-27_v1.2.json",
+      "sha256": "4e34389cb1cb1a0d9261fc6db8594d9bdfaf761f13d4af6b84c1862510e2aeeb",
+      "bytes": 390622,
+      "act": "Income-tax Act, 1961 - ITR-2 electronic return data contract",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; portal release 2026-08-13; download-page artifact version 1.2",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - JSON Schema, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing portal",
+      "sourceRank": null,
+      "sourceRankNote": "Outside the statutory-source rank ladder; machine-readable filing contract only.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-08/ITR-2_2026_Main_V1.2.json",
+      "route": "official e-Filing downloads page -> direct public JSON GET -> local artifact bytes -> SHA-256 -> JSON parse and identity-field inspection",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Root #/definitions/ITR; Form_ITR2; FormName ITR-2; AssessmentYear 2026; embedded SchemaVer/FormVer Ver1.0.",
+      "whatItEstablishes": [
+        "The exact AY 2026-27 ITR-2 JSON object shape and schema constraints published by the portal."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not establish ITR-2 eligibility, compute tax, or authorize implementation."
+      ],
+      "readingHazard": "The portal artifact is v1.2 while the embedded schema/form version patterns remain Ver1.0. JSON has no PDF page ranges, so no whole-schema text copy is committed."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR2-CHANGES",
+      "file": "ITD_eFiling_ITR-2_Schema-Change_AY-2026-27_v1.2.pdf",
+      "sha256": "9214dae97bff962690b6270fab3dd6726c759608ec158195681db319560b68da",
+      "bytes": 232601,
+      "act": "Income-tax Act, 1961 - ITR-2 electronic return schema change record",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; version 1.2 dated 2026-08-13; original schema dated 2026-05-26",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - schema change document, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing portal",
+      "sourceRank": null,
+      "sourceRankNote": "Outside the statutory-source rank ladder; technical release evidence only.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-08/ITR%202_Schema%20change%20document_AY2026-27_V1.2.pdf",
+      "route": "official e-Filing downloads page -> direct public PDF GET -> local bytes -> SHA-256 -> visual page review -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Page 5 records the 30 June delta to OthersIncDtlEI and the 13 August addition of EditAutopoulatedDetail to ScheduleCGFor23, ScheduleCYLA, ScheduleBFLA and ScheduleSI.",
+      "whatItEstablishes": [
+        "The portal's two recorded ITR-2 schema deltas through version 1.2."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not itself supply the full current schema or decide tax treatment."
+      ],
+      "readingHazard": "The document spells the added element `EditAutopoulatedDetail`; assertions preserve that spelling. -raw gives the clearest row-major table pairing."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR2-VALIDATIONS",
+      "file": "ITD_eFiling_ITR-2_Validation-Rules_AY-2026-27_v1.0.pdf",
+      "sha256": "2321c5ba2469d3c9eaeee40d906b99abe56176782d547e6d0ec09ffdb529550b",
+      "bytes": 740989,
+      "act": "Income-tax Act, 1961 - ITR-2 portal validation rules",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; version 1.0 dated 2026-05-26",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - validation rules, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing project",
+      "sourceRank": 5,
+      "sourceRankNote": "Portal technical/help material is rank 5 and cannot decide a tax question.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf",
+      "route": "official e-Filing downloads page -> direct public PDF GET -> local bytes -> SHA-256 -> visual page review -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Validation Rules v1.0; Category A starts page 6 with valid mobile number, PAN-name matching and other filing-shape scenarios; Category B/D starts page 49.",
+      "whatItEstablishes": [
+        "The portal's published AY 2026-27 ITR-2 validation catalogue and defect categories."
+      ],
+      "whatItDoesNotEstablish": [
+        "It is not a substantive-law holding and this session implements no validations."
+      ],
+      "readingHazard": "Layout/default split multi-line scenarios differently; -raw preserves serial-to-scenario order most clearly. Extract limited to pages 5-7."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR3-SCHEMA",
+      "file": "ITD_eFiling_ITR-3_JSON-Schema_AY-2026-27_v1.1.json",
+      "sha256": "66f4bd705e0e0788fdacb37eb297ace56749d791b84f2f170f4da84236c25e8b",
+      "bytes": 1060874,
+      "act": "Income-tax Act, 1961 - ITR-3 electronic return data contract",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; portal release 2026-06-30; download-page artifact version 1.1",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - JSON Schema, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing portal",
+      "sourceRank": null,
+      "sourceRankNote": "Outside the statutory-source rank ladder; machine-readable filing contract only.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR-3_2026_Main_V1.1.json",
+      "route": "official e-Filing downloads page -> direct public JSON GET -> local artifact bytes -> SHA-256 -> JSON parse and identity-field inspection",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Root #/definitions/ITR; Form_ITR3; FormName enum ITR-3; AssessmentYear enum 2026; embedded SchemaVer/FormVer Ver1.0.",
+      "whatItEstablishes": [
+        "The exact AY 2026-27 ITR-3 JSON object shape and schema constraints published by the portal."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not establish ITR-3 eligibility, compute tax, or authorize implementation."
+      ],
+      "readingHazard": "Unlike ITR-1/2/4, FormName and AssessmentYear use one-value enums instead of regex patterns. The portal artifact is v1.1 while embedded SchemaVer/FormVer remain Ver1.0. JSON has no PDF page ranges."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR3-CHANGES",
+      "file": "ITD_eFiling_ITR-3_Schema-Change_AY-2026-27_v1.1.pdf",
+      "sha256": "31b6d47ca5d6307a6a83cddb2247f429a9fcfb5b5059dfa2a3a2fc0aead5568b",
+      "bytes": 291781,
+      "act": "Income-tax Act, 1961 - ITR-3 electronic return schema change record",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; version 1.1 dated 2026-06-30; original schema dated 2026-06-18",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - schema change document, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing portal",
+      "sourceRank": null,
+      "sourceRankNote": "Outside the statutory-source rank ladder; technical release evidence only.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR%203_Schema%20change%20document_AY2026-27_V1.1_0.pdf",
+      "route": "official e-Filing downloads page -> direct public PDF GET -> local bytes -> SHA-256 -> visual page review -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Page 5 records TDSSection description and enum updates in ScheduleTDS2 and ScheduleTDS3.",
+      "whatItEstablishes": [
+        "The portal's recorded delta from the 18 June 2026 ITR-3 schema to the 30 June 2026 release."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not itself supply the full current schema or decide tax treatment."
+      ],
+      "readingHazard": "Default mode extracts the table column-major; -raw preserves the two row pairings most clearly."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR3-VALIDATIONS",
+      "file": "ITD_eFiling_ITR-3_Validation-Rules_AY-2026-27_v1.0.pdf",
+      "sha256": "60334e821eef769b1af2826b7e8ca2f1aeb76b302886473ed5fec6a0b7cc9d5d",
+      "bytes": 1112874,
+      "act": "Income-tax Act, 1961 - ITR-3 portal validation rules",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "AY 2026-27; version 1.0 dated 2026-06-18",
+      "stage": "OFFICIAL PORTAL TECHNICAL ARTIFACT - validation rules, not law.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - e-Filing project",
+      "sourceRank": 5,
+      "sourceRankNote": "Portal technical/help material is rank 5 and cannot decide a tax question.",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf",
+      "route": "official e-Filing downloads page -> direct public PDF GET -> local bytes -> SHA-256 -> visual page review -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Validation Rules v1.0; Category A begins page 4 and includes the document's exact line `HUF cannot claim relief u/s 89`; Category B starts page 62 and Category D page 65.",
+      "whatItEstablishes": [
+        "The portal's published AY 2026-27 ITR-3 validation catalogue and defect categories."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide section 89 relief and this session implements no validation or tax rule."
+      ],
+      "readingHazard": "Default mode puts serials and scenarios on separate blocks; -raw preserves row-major serial/scenario pairs. Extract limited to pages 3-5."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR14-NOTIFICATION",
+      "file": "Gazette_CBDT_Notification-45-2026_ITR-1-ITR-4.pdf",
+      "sha256": "82f02fb28525632efa8289c378ca94838d739a1bb8cb502b649bcbf1b0b48491",
+      "bytes": 1601858,
+      "act": "Income-tax Act, 1961 - rule-making instrument substituting Forms ITR-1 and ITR-4 in Appendix II to the Income-tax Rules, 1962",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Notification dated 2026-03-30; effective 2026-03-31; applies to returns filed for AY 2026-27",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT - Gazette of India, Extraordinary, Part II, section 3, sub-section (i), G.S.R. 226(E); Income-tax (Second Amendment) Rules, 2026. Read with the later G.S.R. 262(E) corrigendum.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 under official-source-retrieval.md section 5, even when fetched from the official e-Gazette.",
+      "notificationNumber": "Notification No. 45/2026 / F. No. 370142/5/2026-TPL",
+      "gazetteNumber": "G.S.R. 226(E); Gazette ID CG-DL-E-30032026-271423; No. 207",
+      "notificationDate": "2026-03-30",
+      "issuingAuthority": "Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by Pradeep Sharma, Deputy Secretary, Tax Policy and Legislation",
+      "statutoryPower": "Sections 139 and 295 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2026/271423.pdf",
+      "route": "official e-Gazette direct PDF GET -> local artifact bytes -> SHA-256 -> visual review of the relevant pages -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Substitutes Form ITR-1 and Form ITR-4 in Appendix II; applies to returns filed for AY 2026-27.",
+      "whatItEstablishes": [
+        "The notified AY 2026-27 paper-form structures for ITR-1 and ITR-4, subject to G.S.R. 262(E)."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not supply the electronic JSON contract or validation rules, decide form eligibility, compute tax, or authorize implementation."
+      ],
+      "readingHazard": "The form pages are dense grids. -layout retains more visual alignment; default and -raw flatten cells in different orders. Only bounded openings are committed, and no table value is asserted."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR2-NOTIFICATION",
+      "file": "Gazette_CBDT_Notification-46-2026_ITR-2.pdf",
+      "sha256": "aef8d2f1956238ae34e0b2a2c68dbdfd1d696c20efb2f685fb17f72d7fa47349",
+      "bytes": 2177097,
+      "act": "Income-tax Act, 1961 - rule-making instrument substituting Form ITR-2 in Appendix II to the Income-tax Rules, 1962",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Notification dated 2026-03-30; effective 2026-03-31; applies to returns filed for AY 2026-27",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT - Gazette of India, Extraordinary, Part II, section 3, sub-section (i), G.S.R. 227(E); Income-tax (Third Amendment) Rules, 2026. Read with the later G.S.R. 263(E) corrigendum.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 under official-source-retrieval.md section 5, even when fetched from the official e-Gazette.",
+      "notificationNumber": "Notification No. 46/2026 / F. No. 370142/6/2026-TPL",
+      "gazetteNumber": "G.S.R. 227(E); Gazette ID CG-DL-E-31032026-271435; No. 208",
+      "notificationDate": "2026-03-30",
+      "issuingAuthority": "Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by Pradeep Sharma, Deputy Secretary, Tax Policy and Legislation",
+      "statutoryPower": "Sections 139 and 295 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2026/271435.pdf",
+      "route": "official e-Gazette direct PDF GET -> local artifact bytes -> SHA-256 -> visual review of the relevant pages -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Substitutes Form ITR-2 in Appendix II; applies to returns filed for AY 2026-27.",
+      "whatItEstablishes": [
+        "The notified AY 2026-27 paper-form structure for ITR-2, subject to G.S.R. 263(E)."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not supply the electronic JSON contract or validation rules, decide form eligibility, compute tax, or authorize implementation."
+      ],
+      "readingHazard": "The Gazette file is 72 pages and the relevant instrument begins at PDF page 38. The form is grid-heavy; each extraction mode traverses cells differently."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR3-NOTIFICATION",
+      "file": "Gazette_CBDT_Notification-47-2026_ITR-3.pdf",
+      "sha256": "dcc775e0d50607a67a2a3cbadcd9729892929132112d5542b00f3d7788c9d962",
+      "bytes": 3073446,
+      "act": "Income-tax Act, 1961 - rule-making instrument substituting Form ITR-3 in Appendix II to the Income-tax Rules, 1962",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Notification dated 2026-03-30; effective 2026-03-31; applies to returns filed for AY 2026-27",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT - Gazette of India, Extraordinary, Part II, section 3, sub-section (i), G.S.R. 228(E); Income-tax (Fourth Amendment) Rules, 2026. Read with the later G.S.R. 264(E) corrigendum.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 under official-source-retrieval.md section 5, even when fetched from the official e-Gazette.",
+      "notificationNumber": "Notification No. 47/2026 / F. No. 370142/7/2026-TPL",
+      "gazetteNumber": "G.S.R. 228(E); Gazette ID CG-DL-E-31032026-271436; No. 209",
+      "notificationDate": "2026-03-30",
+      "issuingAuthority": "Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by Pradeep Sharma, Deputy Secretary, Tax Policy and Legislation",
+      "statutoryPower": "Sections 139 and 295 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2026/271436.pdf",
+      "route": "official e-Gazette direct PDF GET -> local artifact bytes -> SHA-256 -> visual review of the relevant pages -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Substitutes Form ITR-3 in Appendix II; applies to returns filed for AY 2026-27.",
+      "whatItEstablishes": [
+        "The notified AY 2026-27 paper-form structure for ITR-3, subject to G.S.R. 264(E)."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not supply the electronic JSON contract or validation rules, decide form eligibility, compute tax, or authorize implementation."
+      ],
+      "readingHazard": "The Gazette file is 134 pages and the relevant instrument begins at PDF page 75. Default extraction collapses the heading into one line; the form grid orders differ by mode."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR14-CORRIGENDUM",
+      "file": "Gazette_CBDT_Notification-57-2026_Corrigendum-ITR-1-ITR-4.pdf",
+      "sha256": "3348452da5fb587df64af66fd081b4cda272c02f9652831128e812cf6c1d024e",
+      "bytes": 693809,
+      "act": "Income-tax Act, 1961 - corrigendum to G.S.R. 226(E), correcting Forms ITR-1 and ITR-4",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Corrigendum dated 2026-04-10 to the 2026-03-30 notification",
+      "stage": "PUBLISHED STATUTORY CORRIGENDUM - Gazette of India, Extraordinary, Part II, section 3, sub-section (i), G.S.R. 262(E); must be read with G.S.R. 226(E).",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; corrigendum issued by the Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory corrigendum is rank 2 under official-source-retrieval.md section 5.",
+      "notificationNumber": "Notification No. 57/2026 / F. No. 370142/5/2026-TPL",
+      "gazetteNumber": "G.S.R. 262(E); Gazette ID CG-DL-E-10042026-271717; No. 242",
+      "notificationDate": "2026-04-10",
+      "issuingAuthority": "Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by Pradeep Sharma, Deputy Secretary",
+      "statutoryPower": "Corrigendum to G.S.R. 226(E), issued under sections 139 and 295 of the Income-tax Act, 1961",
+      "url": "https://egazette.gov.in/WriteReadData/2026/271717.pdf",
+      "route": "official e-Gazette direct PDF GET -> local artifact bytes -> SHA-256 -> visual review of page 3 -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Replaces ITR-1 Schedule-IT and corrects two ITR-4 B2 references, including `Iva` to `iva`.",
+      "whatItEstablishes": [
+        "The published corrections that must be applied when reading the notified ITR-1 and ITR-4 forms."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not replace the full forms, supply electronic schemas, or decide tax treatment."
+      ],
+      "readingHazard": "Default mode collapses the correction list and Schedule-IT cells. -layout and -raw keep the clauses more distinct; the exact source case change is Iva to iva."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR2-CORRIGENDUM",
+      "file": "Gazette_CBDT_Notification-58-2026_Corrigendum-ITR-2.pdf",
+      "sha256": "08408c644bfc017d47950838b418118d64e5182d0da48d8bb7c3a1634f6d3bf3",
+      "bytes": 576730,
+      "act": "Income-tax Act, 1961 - corrigendum to G.S.R. 227(E), correcting Form ITR-2",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Corrigendum dated 2026-04-10 to the 2026-03-30 notification",
+      "stage": "PUBLISHED STATUTORY CORRIGENDUM - Gazette of India, Extraordinary, Part II, section 3, sub-section (i), G.S.R. 263(E); must be read with G.S.R. 227(E).",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; corrigendum issued by the Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory corrigendum is rank 2 under official-source-retrieval.md section 5.",
+      "notificationNumber": "Notification No. 58/2026 / F. No. 370142/6/2026-TPL",
+      "gazetteNumber": "G.S.R. 263(E); Gazette ID CG-DL-E-10042026-271713; No. 243",
+      "notificationDate": "2026-04-10",
+      "issuingAuthority": "Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by Pradeep Sharma, Deputy Secretary",
+      "statutoryPower": "Corrigendum to G.S.R. 227(E), issued under sections 139 and 295 of the Income-tax Act, 1961",
+      "url": "https://egazette.gov.in/WriteReadData/2026/271713.pdf",
+      "route": "official e-Gazette direct PDF GET -> local artifact bytes -> SHA-256 -> visual review of page 2 -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Nine corrections across Schedule CG, Schedule 112A, Schedule 115AD(1)(b)(iii), Schedule OS, Schedule CFL and Part B-TI.",
+      "whatItEstablishes": [
+        "The published corrections that must be applied when reading the notified ITR-2 form."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not replace the full form, supply the electronic schema, or decide tax treatment."
+      ],
+      "readingHazard": "Default extraction collapses all nine clauses into one line; -layout and -raw preserve clause boundaries more clearly."
+    },
+    {
+      "id": "K4-SOURCE-05-ITR3-CORRIGENDUM",
+      "file": "Gazette_CBDT_Notification-59-2026_Corrigendum-ITR-3.pdf",
+      "sha256": "2678d15a67b3f4f1fe1a70c858ec57c3f6f22375cf082b7841b0fbd43ab9f340",
+      "bytes": 496875,
+      "act": "Income-tax Act, 1961 - corrigendum to G.S.R. 228(E), correcting Form ITR-3",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Corrigendum dated 2026-04-10 to the 2026-03-30 notification",
+      "stage": "PUBLISHED STATUTORY CORRIGENDUM - Gazette of India, Extraordinary, Part II, section 3, sub-section (i), G.S.R. 264(E); must be read with G.S.R. 228(E).",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; corrigendum issued by the Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF identifies itself as the Gazette of India and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory corrigendum is rank 2 under official-source-retrieval.md section 5.",
+      "notificationNumber": "Notification No. 59/2026 / F. No. 370142/7/2026-TPL",
+      "gazetteNumber": "G.S.R. 264(E); Gazette ID CG-DL-E-10042026-271714; No. 244",
+      "notificationDate": "2026-04-10",
+      "issuingAuthority": "Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by Pradeep Sharma, Deputy Secretary",
+      "statutoryPower": "Corrigendum to G.S.R. 228(E), issued under sections 139 and 295 of the Income-tax Act, 1961",
+      "url": "https://egazette.gov.in/WriteReadData/2026/271714.pdf",
+      "route": "official e-Gazette direct PDF GET -> local artifact bytes -> SHA-256 -> visual review of page 2 -> pdftotext -layout, default, and -raw",
+      "retrievedOn": "2026-08-21",
+      "exactEntry": "Three corrections across Schedule CG and Schedule OS.",
+      "whatItEstablishes": [
+        "The published corrections that must be applied when reading the notified ITR-3 form."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not replace the full form, supply the electronic schema, or decide tax treatment."
+      ],
+      "readingHazard": "Clause (ii) reads `the words and letters B13a shall be substituted B12a`, omitting `by` or `with`; assertions preserve the actual Gazette wording."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2015",
+      "file": "Gazette_Finance-Act-2015_No-20-of-2015_complete.pdf",
+      "sha256": "33e73c90d8c3502d1793b03594814fae385ccc0627321714b0d4c64085f7ca99",
+      "bytes": 616306,
+      "act": "Finance Act - THE FINANCE ACT, 2015, NO. 20 OF 2015",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2015-16 (previous year / financial year 2014-15). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2015-05-14; the long title gives effect to the financial proposals for the financial year 2015-2016",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 24, New Delhi, Thursday, May 14, 2015 / Vaisakha 24, 1937 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "No digital CG-DL Gazette ID - the e-Gazette listing records it as NOT available and the document carries none; e-Gazette content id 163872; masthead No. 24",
+      "notificationDate": "2015-05-14",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2015 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2015/163872.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2015 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2015-16 (previous year 2014-15), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2014-15 -> AY 2015-16 -> THE FINANCE ACT, 2015, NO. 20 OF 2015."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2016",
+      "file": "Gazette_Finance-Act-2016_No-28-of-2016_complete.pdf",
+      "sha256": "d204237dc5cb66577af2efd5512bbba68c2068cae464e148db23de03f07c1f67",
+      "bytes": 784345,
+      "act": "Finance Act - THE FINANCE ACT, 2016, NO. 28 OF 2016",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2016-17 (previous year / financial year 2015-16). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2016-05-14; the long title gives effect to the financial proposals for the financial year 2016-2017",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 32, New Delhi, Saturday, May 14, 2016 / Vaisakha 24, 1938 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "No digital CG-DL Gazette ID - the e-Gazette listing records it as NOT available and the document carries none; e-Gazette content id 169739; masthead No. 32",
+      "notificationDate": "2016-05-14",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2016 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2016/169739.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2016 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2016-17 (previous year 2015-16), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2015-16 -> AY 2016-17 -> THE FINANCE ACT, 2016, NO. 28 OF 2016."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. A SEPARATE HINDI compilation (Part II-Section 1-A, published 26-Sep-2017, e-Gazette content id 179206) carries this Act together with the Anti-Hijacking Act, 2016 and the Dentists (Amendment) Act, 2016. It is NOT registered here; do not confuse the two documents."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2017",
+      "file": "Gazette_Finance-Act-2017_No-7-of-2017_complete.pdf",
+      "sha256": "3c0c3924710ea600bcd07109a3d759427c2fd16c273d90b8f1c63abacca3be20",
+      "bytes": 1404142,
+      "act": "Finance Act - THE FINANCE ACT, 2017, NO. 7 OF 2017",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2017-18 (previous year / financial year 2016-17). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2017-03-31; the long title gives effect to the financial proposals for the financial year 2017-2018",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 7, New Delhi, Friday, March 31, 2017 / Chaitra 10, 1939 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "No digital CG-DL Gazette ID - the e-Gazette listing records it as NOT available and the document carries none; e-Gazette content id 175141; masthead No. 7",
+      "notificationDate": "2017-03-31",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2017 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2017/175141.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2017 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2017-18 (previous year 2016-17), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2016-17 -> AY 2017-18 -> THE FINANCE ACT, 2017, NO. 7 OF 2017."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2018",
+      "file": "Gazette_Finance-Act-2018_No-13-of-2018_complete.pdf",
+      "sha256": "296402f97e17a4a22c66267364d207e1e620b62a221624631c86add0a692f8e1",
+      "bytes": 292482,
+      "act": "Finance Act - THE FINANCE ACT, 2018, NO. 13 OF 2018",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2018-19 (previous year / financial year 2017-18). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2018-03-29; the long title gives effect to the financial proposals for the financial year 2018-2019",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 17, New Delhi, Thursday, March 29, 2018 / Chaitra 8, 1940 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "No digital CG-DL Gazette ID - the e-Gazette listing records it as NOT available and the document carries none; e-Gazette content id 184302; masthead No. 17",
+      "notificationDate": "2018-03-29",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2018 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2018/184302.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2018 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2018-19 (previous year 2017-18), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2017-18 -> AY 2018-19 -> THE FINANCE ACT, 2018, NO. 13 OF 2018."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. INTERNAL DATE DISCREPANCY, PRESERVED NOT REPAIRED: the Gazette recital reads 'received the assent of the President on the 29th March, 2018' while the Act's own bracketed date reads '[28th March, 2018.]'. Both are in the artifact; neither was corrected."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2019-INTERIM",
+      "file": "Gazette_Finance-Act-2019_No-7-of-2019_complete.pdf",
+      "sha256": "a1c0ff149b2bbaa8f9feb4d1824c626fad5f52d9d23be3d1b6c3af924a412065",
+      "bytes": 1361025,
+      "act": "Finance Act - THE FINANCE ACT, 2019, NO. 7 OF 2019",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2019-20 (previous year / financial year 2018-19). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2019-02-21; the long title gives effect to the financial proposals for the financial year 2019-2020",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 15, New Delhi, Thursday, February 21, 2019 / Phalguna 2, 1940 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "No digital CG-DL Gazette ID - the e-Gazette listing records it as NOT available and the document carries none; e-Gazette content id 198304; masthead No. 15",
+      "notificationDate": "2019-02-21",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2 APPLIES section 2 of, and the First Schedule to, the Finance Act, 2018, with enumerated modifications, to the assessment year commencing on the 1st day of April, 2019. It enacts NO First Schedule of its own.",
+      "url": "https://egazette.gov.in/WriteReadData/2019/198304.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2: \"The provisions of section 2 of, and the First Schedule to, the Finance Act, 2018, shall apply in relation to income-tax for the assessment year or, as the case may be, the financial year commencing on the 1st day of April, 2019\" followed by enumerated modifications. NO First Schedule is present in this Act.",
+      "whatItEstablishes": [
+        "The charging provision for AY 2019-20 AS FIRST ENACTED: it incorporates the Finance Act, 2018's section 2 and First Schedule by reference, as modified.",
+        "That this Act contains NO First Schedule - established by a full-text scan of the artifact, not assumed.",
+        "The previous-year to assessment-year mapping: previous year 2018-19 -> AY 2019-20."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not itself state the rates: they are the Finance Act, 2018's, as modified by this section 2.",
+        "It was SUPERSEDED for AY 2019-20 by the Finance (No. 2) Act, 2019 (NO. 23 OF 2019), which enacts its own First Schedule. Do not read this Act as the final rate authority for AY 2019-20.",
+        "It decides no tax treatment, implements nothing, and moves no pack toward ca_verified."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. NO FIRST SCHEDULE. This Act's rate authority is the Finance Act, 2018's First Schedule as modified by its section 2, and it was superseded for AY 2019-20 by the Finance (No. 2) Act, 2019 (NO. 23 OF 2019). Its long title is 'An Act to continue the existing rates of income-tax for the financial year 2019-2020 and to provide for certain relief to taxpayers and to make amendments in certain enactments' - it does not purport to enact new rates."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2019-NO2",
+      "file": "Gazette_Finance-No-2-Act-2019_No-23-of-2019_complete.pdf",
+      "sha256": "90a4a84c17a74cc73fbf862014bdfb3b4dc80a6047323167e4c958af710ae212",
+      "bytes": 1450193,
+      "act": "Finance Act - THE FINANCE (NO. 2) ACT, 2019, NO. 23 OF 2019",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2019-20 (previous year / financial year 2018-19). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2019-08-01; the long title gives effect to the financial proposals for the financial year 2019-2020",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 42, New Delhi, Thursday, August 1, 2019 / Shravana 10, 1941 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "No digital CG-DL Gazette ID - the e-Gazette listing records it as NOT available and the document carries none; e-Gazette content id 209695; masthead No. 42",
+      "notificationDate": "2019-08-01",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2019 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2019/209695.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2019 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2019-20 (previous year 2018-19), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2018-19 -> AY 2019-20 -> THE FINANCE (NO. 2) ACT, 2019, NO. 23 OF 2019."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. NOT INDEXED under the e-Gazette 'Search by Bill / Assent / Act' Act list; it was found only through 'Search by Ministry' (Ministry of Law and Justice, August 2019). An absent index row is not an absent Gazette."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2020",
+      "file": "Gazette_Finance-Act-2020_No-12-of-2020_complete.pdf",
+      "sha256": "2608fdf5eabdb4d1f99132cf1905546940946f6b616e593bb862b9fc488435d2",
+      "bytes": 769691,
+      "act": "Finance Act - THE FINANCE ACT, 2020, NO. 12 OF 2020",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2020-21 (previous year / financial year 2019-20). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2020-03-27; the long title gives effect to the financial proposals for the financial year 2020-2021",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 20, New Delhi, Friday, March 27, 2020 / Chaitra 7, 1942 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "CG-DL-E-27032020-218938; e-Gazette content id 218938; masthead No. 20",
+      "notificationDate": "2020-03-27",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2020 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2020/218938.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2020 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2020-21 (previous year 2019-20), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2019-20 -> AY 2020-21 -> THE FINANCE ACT, 2020, NO. 12 OF 2020."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. The masthead digital Gazette-ID string extracts INTERLEAVED (for example CG-DxxLx-EG-2I7D0E32x0x2x0-218938); read the id from the e-Gazette listing, not from the extracted masthead."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2021",
+      "file": "Gazette_Finance-Act-2021_No-13-of-2021_complete.pdf",
+      "sha256": "7c3b703d86169881b6b94c7665f0d5906aecd9d53e08365401588e5f719e79dc",
+      "bytes": 1437156,
+      "act": "Finance Act - THE FINANCE ACT, 2021, NO. 13 OF 2021",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2021-22 (previous year / financial year 2020-21). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2021-03-28; the long title gives effect to the financial proposals for the financial year 2021-2022",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 15, New Delhi, Sunday, March 28, 2021 / Chaitra 7, 1943 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "CG-DL-E-28032021-226208; e-Gazette content id 226208; masthead No. 15",
+      "notificationDate": "2021-03-28",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2021 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2021/226208.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2021 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2021-22 (previous year 2020-21), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2020-21 -> AY 2021-22 -> THE FINANCE ACT, 2021, NO. 13 OF 2021."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. The masthead digital Gazette-ID string extracts INTERLEAVED (for example CG-DxxLx-EG-2I7D0E32x0x2x0-218938); read the id from the e-Gazette listing, not from the extracted masthead. THE e-GAZETTE LISTING METADATA IS WRONG FOR THIS ROW: the search result records 'Part I-Section 1', while the document's own masthead reads 'PART II - Section 1', as every sibling Finance Act does. THE DOCUMENT GOVERNS."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2022",
+      "file": "Gazette_Finance-Act-2022_No-6-of-2022_complete.pdf",
+      "sha256": "fd62df6728f1806adbb61bb8a47832beb7abf7a7ff5057f81482e61b98389046",
+      "bytes": 802489,
+      "act": "Finance Act - THE FINANCE ACT, 2022, No. 6 OF 2022",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2022-23 (previous year / financial year 2021-22). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2022-03-30; the long title gives effect to the financial proposals for the financial year 2022-2023",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 6, New Delhi, Wednesday, March 30, 2022 / Chaitra 9, 1944 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "CG-DL-E-31032022-234693; e-Gazette content id 234693; masthead No. 6",
+      "notificationDate": "2022-03-30",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2022 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2022/234693.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2022 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2022-23 (previous year 2021-22), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2021-22 -> AY 2022-23 -> THE FINANCE ACT, 2022, No. 6 OF 2022."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. The masthead digital Gazette-ID string extracts INTERLEAVED (for example CG-DxxLx-EG-2I7D0E32x0x2x0-218938); read the id from the e-Gazette listing, not from the extracted masthead."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2023",
+      "file": "Gazette_Finance-Act-2023_No-8-of-2023_complete.pdf",
+      "sha256": "47073290530bdbeb7c8b8cb9bfd40c16b18c17f06b422ef824f35dec0739aa80",
+      "bytes": 398733,
+      "act": "Finance Act - THE FINANCE ACT, 2023, No. 8 OF 2023",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2023-24 (previous year / financial year 2022-23). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2023-03-31; the long title gives effect to the financial proposals for the financial year 2023-2024",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 8, New Delhi, Friday, March 31, 2023 / Chaitra 10, 1945 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "CG-DL-E-31032023-244830; e-Gazette content id 244830; masthead No. 8",
+      "notificationDate": "2023-03-31",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2023 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2023/244830.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2023 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2023-24 (previous year 2022-23), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2022-23 -> AY 2023-24 -> THE FINANCE ACT, 2023, No. 8 OF 2023."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. The masthead digital Gazette-ID string extracts INTERLEAVED (for example CG-DxxLx-EG-2I7D0E32x0x2x0-218938); read the id from the e-Gazette listing, not from the extracted masthead."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2024-INTERIM",
+      "file": "Gazette_Finance-Act-2024_No-8-of-2024_complete.pdf",
+      "sha256": "61c6ab8909b8fffc735973c0e0188631b4eb3d1d0618c321bdffb0e91737c19b",
+      "bytes": 490926,
+      "act": "Finance Act - THE FINANCE ACT, 2024, NO. 8 OF 2024",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2024-25 (previous year / financial year 2023-24). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2024-02-15; the long title gives effect to the financial proposals for the financial year 2024-2025",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 8, New Delhi, Thursday, February 15, 2024 / Magha 26, 1945 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "CG-DL-E-16022024-252143; e-Gazette content id 252143; masthead No. 8",
+      "notificationDate": "2024-02-15",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2 APPLIES section 2 of, and the First Schedule to, the Finance Act, 2023, with enumerated modifications, to the assessment year commencing on the 1st day of April, 2024. It enacts NO First Schedule of its own.",
+      "url": "https://egazette.gov.in/WriteReadData/2024/252143.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2: \"The provisions of section 2 of, and the First Schedule to, the Finance Act, 2023, shall apply in relation to income-tax for the assessment year or, as the case may be, the financial year commencing on the 1st day of April, 2024\" followed by enumerated modifications. NO First Schedule is present in this Act.",
+      "whatItEstablishes": [
+        "The charging provision for AY 2024-25 AS FIRST ENACTED: it incorporates the Finance Act, 2023's section 2 and First Schedule by reference, as modified.",
+        "That this Act contains NO First Schedule - established by a full-text scan of the artifact, not assumed.",
+        "The previous-year to assessment-year mapping: previous year 2023-24 -> AY 2024-25."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not itself state the rates: they are the Finance Act, 2023's, as modified by this section 2.",
+        "It was SUPERSEDED for AY 2024-25 by the Finance (No. 2) Act, 2024 (No. 15 of 2024), which enacts its own First Schedule. Do not read this Act as the final rate authority for AY 2024-25.",
+        "It decides no tax treatment, implements nothing, and moves no pack toward ca_verified."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. NO FIRST SCHEDULE. This Act's rate authority is the Finance Act, 2023's First Schedule as modified by its section 2, and it was superseded for AY 2024-25 by the Finance (No. 2) Act, 2024 (No. 15 of 2024). The masthead digital Gazette-ID string extracts INTERLEAVED (for example CG-DxxLx-EG-2I7D0E32x0x2x0-218938); read the id from the e-Gazette listing, not from the extracted masthead. Its long title is 'An Act to continue the existing rates of income-tax for the financial year 2024-2025 and to provide for certain relief to taxpayers and to make amendments in certain enactments' - it does not purport to enact new rates."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2024-NO2",
+      "file": "Gazette_Finance-No-2-Act-2024_No-15-of-2024_complete.pdf",
+      "sha256": "16bf85c2bd66af15ba709816a8fd00501a9092e21ae3c9576537a435825ac73a",
+      "bytes": 2477172,
+      "act": "Finance Act - THE FINANCE (No. 2) ACT, 2024, No. 15 of 2024",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2024-25 (previous year / financial year 2023-24). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2024-08-16; the long title gives effect to the financial proposals for the financial year 2024-25",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 18, New Delhi, Friday, August 16, 2024 / Sravana 25, 1946 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "CG-DL-E-16082024-256436; e-Gazette content id 256436; masthead No. 18",
+      "notificationDate": "2024-08-16",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2024 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2024/256436.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st day of April, 2024 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2024-25 (previous year 2023-24), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2023-24 -> AY 2024-25 -> THE FINANCE (No. 2) ACT, 2024, No. 15 of 2024."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. The masthead digital Gazette-ID string extracts INTERLEAVED (for example CG-DxxLx-EG-2I7D0E32x0x2x0-218938); read the id from the e-Gazette listing, not from the extracted masthead. NOT INDEXED under the e-Gazette Act list; found through 'Search by Ministry' (Ministry of Law and Justice, August 2024). Its long title names the financial year as '2024-25', not '2024-2025' as its siblings do."
+    },
+    {
+      "id": "K4-SOURCE-06-FA2025",
+      "file": "Gazette_Finance-Act-2025_No-7-of-2025_complete.pdf",
+      "sha256": "6eb45d58a1859b5a25ab3d4ce9a56726121662d76b2ce3ee3b87b66274d42dd6",
+      "bytes": 1280178,
+      "act": "Finance Act - THE FINANCE ACT, 2025, No. 7 of 2025",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2025-26 (previous year / financial year 2024-25). Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2025-03-29; the long title gives effect to the financial proposals for the financial year 2025-2026",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 7, New Delhi, Saturday, March 29, 2025 / Chaitra 8, 1947 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "gazetteNumber": "CG-DL-E-29032025-262125; e-Gazette content id 262125; masthead No. 7",
+      "notificationDate": "2025-03-29",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2025 at the rates specified in Part I of the First Schedule.",
+      "url": "https://egazette.gov.in/WriteReadData/2025/262125.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act' and 'Search by Ministry' (Ministry of Law and Justice, Part II-Section 1) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; page 1 read for Act identity BEFORE any use",
+      "retrievedOn": "2026-08-22",
+      "exactEntry": "s.2(1): income-tax charged for the assessment year commencing on the 1st April, 2025 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2025-26 (previous year 2024-25), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2024-25 -> AY 2025-26 -> THE FINANCE ACT, 2025, No. 7 of 2025."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "Any later amending or validating Act is not registered here, so this artifact is the Act as first enacted."
+      ],
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded; the English statutory text is clean. The masthead digital Gazette-ID string extracts INTERLEAVED (for example CG-DxxLx-EG-2I7D0E32x0x2x0-218938); read the id from the e-Gazette listing, not from the extracted masthead. TEXTUAL VARIANT IN THE CHARGING WORDS: s.2(1) reads 'for the assessment year commencing on the 1st April, 2025', omitting the 'day of' that every sibling Finance Act carries. A quoted span must preserve it."
+    },
+    {
+      "id": "K4-SOURCE-07-CII-2018",
+      "file": "Gazette_CBDT_Notification-26-2018_CII-FY-2018-19.pdf",
+      "sha256": "d5c9a59489f67cb2ae055725b569e5f6834a344d3b0bdedacf7706bc72999ff6",
+      "bytes": 1801970,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. The notification inserts the FY 2018-19 CII into the table underlying the section 112 indexed comparison branch. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification issued 2018; FY 2018-19 entry; effective 1 April 2019 for AY 2019-20 and subsequent years",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 2413(E). Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India, says PUBLISHED BY AUTHORITY, and records publication by the Controller of Publications.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 26/2018 / F.No. 370142/3/2018-TPL",
+      "gazetteNumber": "S.O. 2413(E); No. 2182",
+      "notificationDate": "2018-06-13",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by PRAVIN RAWAL, Director (TPL)",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2018/186447.pdf",
+      "route": "official e-Gazette 'Search by Ministry' (Ministry of Finance, month of issue) -> content id 186447 -> direct PDF GET -> SHA-256 -> byte count cross-checked against the size the listing prints -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "amends": "S.O. 1790(E) dated 5 June 2017 (the principal notification)",
+      "exactEntry": "After serial number 17, insert: serial 18 / Financial Year 2018-19 / Cost Inflation Index 280.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index for financial year 2018-19 is 280.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961.",
+        "The notification comes into force on 1 April 2019 and applies to Assessment Year 2019-20 and subsequent years."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide how the section 112 comparison should be computed or which branch controls a case.",
+        "It does not supply acquisition-year or improvement-year inputs, acquisition/improvement costs, deemed consideration facts, or exemption facts.",
+        "It does not establish eligibility or arithmetic under sections 54 or 54F.",
+        "Registering it does NOT by itself change any engine value: the five FY 2018-19 to FY 2022-23 values remain owner-decided under D337 until a session is separately authorized to re-mark their evidence."
+      ],
+      "readingHazard": "PAGE 1 IS THE HINDI PAGE AND ITS ENGLISH-ALPHABET GLYPHS ARE DROPPED IN ALL THREE MODES — the Devanagari uses a legacy non-Unicode font and pdftotext renders the surrounding letters as blanks, so page 1 extracts as digits and punctuation only (`.. 2413().--  ,  - ,  1961 (1961  43)   48`). THE ENGLISH INSTRUMENT IS ON PAGE 2 AND EXTRACTS CLEANLY. Read page 2; do not quote page 1."
+    },
+    {
+      "id": "K4-SOURCE-07-CII-2019",
+      "file": "Gazette_CBDT_Notification-63-2019_CII-FY-2019-20.pdf",
+      "sha256": "f8f2b4263067799a3784a3a9f28fe8fe2f34eeb2b673e0a83b58edf758657fd3",
+      "bytes": 297478,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. The notification inserts the FY 2019-20 CII into the table underlying the section 112 indexed comparison branch. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification issued 2019; FY 2019-20 entry; effective 1 April 2020 for AY 2020-2021 and subsequent years",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 3266(E). Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India, says PUBLISHED BY AUTHORITY, and records publication by the Controller of Publications.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 63/2019 / F. No. 370142/11/2019-TPL",
+      "gazetteNumber": "S.O. 3266(E); No. 2988",
+      "notificationDate": "2019-09-12",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by PRAVIN RAWAL, Director (Tax Policy and Legislation)",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2019/212431.pdf",
+      "route": "official e-Gazette 'Search by Ministry' (Ministry of Finance, month of issue) -> content id 212431 -> direct PDF GET -> SHA-256 -> byte count cross-checked against the size the listing prints -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "amends": "S.O. 2413(E) dated 13 June 2018",
+      "exactEntry": "After serial number 18, insert: serial 19 / Financial Year 2019-20 / Cost Inflation Index 289.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index for financial year 2019-20 is 289.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961.",
+        "The notification comes into force on 1 April 2020 and applies to Assessment Year 2020-2021 and subsequent years."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide how the section 112 comparison should be computed or which branch controls a case.",
+        "It does not supply acquisition-year or improvement-year inputs, acquisition/improvement costs, deemed consideration facts, or exemption facts.",
+        "It does not establish eligibility or arithmetic under sections 54 or 54F.",
+        "Registering it does NOT by itself change any engine value: the five FY 2018-19 to FY 2022-23 values remain owner-decided under D337 until a session is separately authorized to re-mark their evidence."
+      ],
+      "readingHazard": "Bilingual instrument. The Hindi layer is degraded; the English layer is clean. The inserted table row renders on one line in -layout and -raw, and column-major in the default mode — §3.2 applies."
+    },
+    {
+      "id": "K4-SOURCE-07-CII-2020",
+      "file": "Gazette_CBDT_Notification-32-2020_CII-FY-2020-21.pdf",
+      "sha256": "f9fc76a9d100199d6aafe5807f619700d5b852c76dc2ef1a14c3b985dbabd9c8",
+      "bytes": 1713316,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. The notification inserts the FY 2020-21 CII into the table underlying the section 112 indexed comparison branch. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification issued 2020; FY 2020-21 entry; effective 1 April 2021 for AY 2021-22 and subsequent years",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 1879(E). Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India, says PUBLISHED BY AUTHORITY, and records publication by the Controller of Publications.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 32/2020 / F.No. 370142/17/2020-TPL",
+      "gazetteNumber": "S.O. 1879(E); No. 1676",
+      "notificationDate": "2020-06-12",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by ANKIT JAIN, Under Secy. (Tax Policy and Legislation)",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2020/219919.pdf",
+      "route": "official e-Gazette 'Search by Ministry' (Ministry of Finance, month of issue) -> content id 219919 -> direct PDF GET -> SHA-256 -> byte count cross-checked against the size the listing prints -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "amends": "S.O. 1790(E) dated 5 June 2017, last amended by S.O. 3266(E) dated 12 September 2019",
+      "exactEntry": "After serial number 19, insert: serial 20 / Financial Year 2020-21 / Cost Inflation Index 301.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index for financial year 2020-21 is 301.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961.",
+        "The notification comes into force on 1 April 2021 and applies to Assessment Year 2021-22 and subsequent years."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide how the section 112 comparison should be computed or which branch controls a case.",
+        "It does not supply acquisition-year or improvement-year inputs, acquisition/improvement costs, deemed consideration facts, or exemption facts.",
+        "It does not establish eligibility or arithmetic under sections 54 or 54F.",
+        "Registering it does NOT by itself change any engine value: the five FY 2018-19 to FY 2022-23 values remain owner-decided under D337 until a session is separately authorized to re-mark their evidence."
+      ],
+      "readingHazard": "Bilingual instrument. The Hindi layer is degraded; the English layer is clean. The inserted table row renders on one line in -layout and -raw, and column-major in the default mode — §3.2 applies."
+    },
+    {
+      "id": "K4-SOURCE-07-CII-2021",
+      "file": "Gazette_CBDT_Notification-73-2021_CII-FY-2021-22.pdf",
+      "sha256": "64e00809a4a1e0804281165f00d8230c1dcd72d8d2a463002e8c696d7d21466d",
+      "bytes": 1389238,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. The notification inserts the FY 2021-2022 CII into the table underlying the section 112 indexed comparison branch. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification issued 2021; FY 2021-2022 entry; effective 1 April 2022 for AY 2022-2023 and subsequent years",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 2336(E). Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India, says PUBLISHED BY AUTHORITY, and records publication by the Controller of Publications.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 73/2021 / F.No. 370142/10/2021-TPL",
+      "gazetteNumber": "S.O. 2336(E); No. 2172",
+      "notificationDate": "2021-06-15",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by Central Board of Direct Taxes (Tax Policy and Legislation)",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2021/227620.pdf",
+      "route": "official e-Gazette 'Search by Ministry' (Ministry of Finance, month of issue) -> content id 227620 -> direct PDF GET -> SHA-256 -> byte count cross-checked against the size the listing prints -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "amends": "S.O. 1790(E) dated 5 June 2017, last amended by S.O. 1879(E) dated 12 June 2020",
+      "exactEntry": "After serial number 20, insert: serial 21 / Financial Year 2021-2022 / Cost Inflation Index 317.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index for financial year 2021-2022 is 317.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961.",
+        "The notification comes into force on 1 April 2022 and applies to Assessment Year 2022-2023 and subsequent years."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide how the section 112 comparison should be computed or which branch controls a case.",
+        "It does not supply acquisition-year or improvement-year inputs, acquisition/improvement costs, deemed consideration facts, or exemption facts.",
+        "It does not establish eligibility or arithmetic under sections 54 or 54F.",
+        "Registering it does NOT by itself change any engine value: the five FY 2018-19 to FY 2022-23 values remain owner-decided under D337 until a session is separately authorized to re-mark their evidence."
+      ],
+      "readingHazard": "Bilingual instrument. The Hindi layer is degraded; the English layer is clean. The inserted table row renders on one line in -layout and -raw, and column-major in the default mode — §3.2 applies."
+    },
+    {
+      "id": "K4-SOURCE-07-CII-2022",
+      "file": "Gazette_CBDT_Notification-62-2022_CII-FY-2022-23.pdf",
+      "sha256": "d7ab1cd314d3a0ea7eeb6d69ca07c85ca9113670cf537ce6033c3e40f2e9d1e8",
+      "bytes": 1162094,
+      "act": "Income-tax Act, 1961 — Cost Inflation Index notification under clause (v) of the Explanation to section 48",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. The notification inserts the FY 2022-23 CII into the table underlying the section 112 indexed comparison branch. It does not serve the Income-tax Act, 2025 world.",
+      "year": "Notification issued 2022; FY 2022-23 entry; effective 1 April 2023 for AY 2023-24 and subsequent years",
+      "stage": "NOTIFIED STATUTORY INSTRUMENT — Gazette of India, Extraordinary, Part II, section 3, sub-section (ii), S.O. 2735(E). Not a Bill, statute or departmental summary.",
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; instrument issued by the Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The PDF identifies itself as the Gazette of India, says PUBLISHED BY AUTHORITY, and records publication by the Controller of Publications.",
+      "sourceRank": 2,
+      "sourceRankNote": "A statutory notification is rank 2 on official-source-retrieval.md §5 even when the publisher is the official e-Gazette. Official publisher and instrument rank are separate properties.",
+      "notificationNumber": "Notification No. 62/2022 / F. No. 370142/20/2022-TPL",
+      "gazetteNumber": "S.O. 2735(E); No. 2603; Gazette ID CG-DL-E-14062022-236565",
+      "notificationDate": "2022-06-14",
+      "issuingAuthority": "Central Government, Ministry of Finance (Department of Revenue), Central Board of Direct Taxes; signed by UMME FARDINA ADIL, Under Secy. (Tax Policy and Legislation)",
+      "statutoryPower": "Clause (v) of the Explanation to section 48 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://egazette.gov.in/WriteReadData/2022/236565.pdf",
+      "route": "official e-Gazette 'Search by Ministry' (Ministry of Finance, month of issue) -> content id 236565 -> direct PDF GET -> SHA-256 -> byte count cross-checked against the size the listing prints -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "amends": "S.O. 1790(E) dated 5 June 2017, last amended by S.O. 2336(E) dated 15 June 2021",
+      "exactEntry": "After serial number 21, insert: serial 22 / Financial Year 2022-23 / Cost Inflation Index 331.",
+      "whatItEstablishes": [
+        "The notified Cost Inflation Index for financial year 2022-23 is 331.",
+        "The insertion is made under clause (v) of the Explanation to section 48 of the Income-tax Act, 1961.",
+        "The notification comes into force on 1 April 2023 and applies to Assessment Year 2023-24 and subsequent years."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does not decide how the section 112 comparison should be computed or which branch controls a case.",
+        "It does not supply acquisition-year or improvement-year inputs, acquisition/improvement costs, deemed consideration facts, or exemption facts.",
+        "It does not establish eligibility or arithmetic under sections 54 or 54F.",
+        "Registering it does NOT by itself change any engine value: the five FY 2018-19 to FY 2022-23 values remain owner-decided under D337 until a session is separately authorized to re-mark their evidence."
+      ],
+      "readingHazard": "Bilingual instrument. The Hindi layer is degraded; the English layer is clean. The inserted table row renders on one line in -layout and -raw, and column-major in the default mode — §3.2 applies."
+    },
+    {
+      "id": "K4-SOURCE-07-RULES-1962",
+      "file": "ITD_Income-tax-Rules-1962_consolidated_2026-04-01.pdf",
+      "sha256": "e5ef4405ccb7feb490c6c4ceab16acbd3a307f38ef99a7a32dc57fb7c82115b3",
+      "bytes": 103643017,
+      "act": "Income-tax Rules, 1962 - the COMPLETE consolidated Rules, 629 pages",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961. Rule 2(1)(a) of this document defines 'Act' as the Income-tax Act, 1961 (43 of 1961), which is what distinguishes it from the Income-tax Rules, 2026 (K4-PORT-02-S2), whose rule 2321 defines 'Act' as the Income-tax Act, 2025. D301 records that collision as a live trap; this artifact is on the 1961 side of it.",
+      "year": "Consolidated text as published 2026-04-01 (the date is in the ITD filename and the document is the current published consolidation).",
+      "stage": "CONSOLIDATED DEPARTMENTAL REPRINT of a statutory instrument, not the Gazette notification as issued. Carries editorial footnote markers (52[...]) and omission markers ([***]) inside the rule text.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - printed in the header of every page of the document itself, not inferred from annotation style.",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER - the Income-tax Department's own site, at a static stored /documents/ path with an explicit ?version=11.0.",
+      "sourceRank": 2,
+      "sourceRankNote": "RANK 2, matching K4-PORT-04-S2's reasoning rather than making a new judgement: a CONSOLIDATION with editorial brackets inside the quoted words is not the instrument as notified, whoever publishes it. Its publisher IS established (printed on every page) where K4-PORT-04-S2's is inferred, and it has an exact re-retrievable URL where K4-PORT-04-S2 has none - but neither of those promotes a consolidation to rank 1.",
+      "gazetteNumber": "Founding notification S.O. 969 dated 26-3-1962, recited on the document's own first text page",
+      "issuingAuthority": "Central Board of Revenue (as it then was) under section 295 of the Income-tax Act, 1961 and rule 15 of Part A, rule 11 of Part B and rule 9 of Part C of the Fourth Schedule",
+      "statutoryPower": "Section 295 of the Income-tax Act, 1961 (43 of 1961)",
+      "url": "https://www.incometaxindia.gov.in/documents/20117/1842422/Income-tax-Rules-1962_2026-04-01_05-44-55_6f86ac_en.pdf/912570c2-a404-2a4c-ac17-e93ea54d2602?version=11.0&t=1775132171126",
+      "route": "browser pane navigated to the exact static /documents/ URL -> ITD served the file as a download and the OWNER accepted the save dialog (official-source-retrieval.md 3.1) -> read from ~/Downloads by its known filename only -> SHA-256 -> byte count cross-checked against the Content-Length the server reported -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "whatItEstablishes": [
+        "The complete text of the Income-tax Rules, 1962 as currently consolidated by the Income-tax Department, 629 pages, rule 1 through the Appendices.",
+        "Rule 21A (relief when salary is paid in arrears or in advance) and rule 21AA (furnishing of particulars for claiming relief under section 89, which prescribes Form No. 10E) - the two rules the section 89 cluster was blocked on.",
+        "Rules 3, 2BB, 11DD, 11A, 6DD, 6ABBA, 8AA, 6G, 12AB and 21AGA - the remaining priority rules in the acquisition brief 2.1.",
+        "Rule 2(1)(a) defines 'Act' as the Income-tax Act, 1961 (43 of 1961), placing the whole document in the 1961 statutory world."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides NO tax question. Holding rule 21A does not specify, authorize or design a section 89 relief computation, and no such computation exists in this repository.",
+        "It is a consolidation, so its bracketed editorial insertions are the publisher's, not the notifying instrument's. A load-bearing quotation still wants the Gazette notification that made the amendment.",
+        "It does not supply the earlier years' rate schedules that rule 21A(2) additionally needs - those are the K4-SOURCE-06 Finance Acts, and holding both still does not make a lookback computable.",
+        "It moves no pack toward ca_verified and changes no capability row."
+      ],
+      "readingHazard": "FALSIFIES A HEADING-BASED PAGE INDEX. Rule numbers and TABLE SERIAL NUMBERS share the shape 'N. ' at line start, so a naive scan for rule headings puts rule 3 on page 9 when it is on page 31 - pages 9-12 are still rule 2BB's allowance table. Every page range committed for this artifact was derived by matching the rule's MARGINAL HEADING TEXT and then verified by reading the boundary page. Footnote lines ('53. Substituted by ...') match the same shape and must be excluded too."
+    },
+    {
+      "id": "K4-SOURCE-07-ACT-1961",
+      "file": "ITD_Income-tax-Act-1961_consolidated_2026-06-18.pdf",
+      "sha256": "73d264fd05bc3b19ee003f399aeb50faf7ea36a42f345fa94ebb9b3a2ad0cb93",
+      "bytes": 179141656,
+      "act": "Income-tax Act, 1961 (43 of 1961) - the COMPLETE consolidated Act, 1,118 pages, section 1 through the Fourteenth Schedule",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Consolidated text as published 2026-06-18, INCORPORATING THE FINANCE ACT, 2026. The document's own note states that amendments made by the Finance Act, 2026 are printed in italics and enclosed in bold square brackets, and it carries 51 references to 'Act No. 4 of 2026'. This is a NEWER VINTAGE than K4-PORT-04-S2, in which 'Finance Act, 2026' occurs zero times.",
+      "stage": "CONSOLIDATED DEPARTMENTAL REPRINT, not the Act as enacted. Carries editorial footnote markers and [***] omission markers inside the section text.",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - printed in the header of every page of the document itself, not inferred from annotation style.",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER - the Income-tax Department's own site, at a static stored /documents/ path with an explicit ?version=2.0.",
+      "sourceRank": 2,
+      "sourceRankNote": "RANK 2 for the same reason as K4-PORT-04-S2 - a consolidation with editorial brackets inside the quoted words. It improves on that artifact on three axes WITHOUT changing rank: its publisher is established rather than inferred, it has an exact re-retrievable URL where K4-PORT-04-S2 has none, and its vintage includes the Finance Act, 2026.",
+      "issuingAuthority": "Parliament of India; consolidated and published by the Income Tax Department",
+      "statutoryPower": "n/a - this is the Act itself",
+      "url": "https://www.incometaxindia.gov.in/documents/20117/43006/Income-tax-Act-1961_2026_2026-06-18_02-47-37_b9326c_en.pdf/f596386d-b8fa-4fdf-2618-77d628ee2200?version=2.0&t=1781776251833",
+      "route": "browser pane navigated to the exact static /documents/ URL -> ITD served the file as a download and the OWNER accepted the save dialog (official-source-retrieval.md 3.1) -> read from ~/Downloads by its known filename only -> SHA-256 -> byte count cross-checked against the Content-Length the server reported -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "whatItEstablishes": [
+        "A complete consolidated Income-tax Act, 1961 from an ESTABLISHED official publisher with an exact re-retrievable URL - the headline item AUDIT-10-F4 recorded as reachable by no tested route.",
+        "The Act's text as amended by the Finance Act, 2026, with those amendments typographically distinguished.",
+        "Section 89 (relief when salary etc. is paid in arrears or in advance) and section 89A at that vintage."
+      ],
+      "whatItDoesNotEstablish": [
+        "It does NOT close AUDIT-10-F4 as a rank question: this is still a rank-2 consolidation, not the Act as enacted in the Gazette, so a load-bearing quotation still wants the enacting instrument.",
+        "It supersedes NOTHING automatically. K4-PORT-04-S2 remains registered and remains the artifact this repository's existing extracts were cut from; re-pointing any citation to this artifact is a separate, deliberate re-citation exercise of the K4-CITE-01 shape, and this session performed no such re-citation.",
+        "It decides no tax question and moves no pack toward ca_verified."
+      ],
+      "readingHazard": "PAGE 1 IS NOT SECTION 1. The PDF opens at Chapter XIV section 139; the short title and the Finance Act, 2026 printing-convention note are on page 7. Do not infer the document is partial from its first page - completeness was established by locating section 1, section 89, and the First through Fourteenth Schedules, not by trusting the page order."
+    },
+    {
+      "id": "K4-SOURCE-07-FORM-10E",
+      "file": "ITD_Form-10E_relief-under-section-89.pdf",
+      "sha256": "87f6ebe7b538cc38e0c0505d48434087b4ee4076744194d474191756dea9c8dd",
+      "bytes": 174731,
+      "act": "Income-tax Rules, 1962 - FORM NO. 10E, prescribed by rule 21AA",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Current published form as served by the ITD forms catalogue on 2026-08-22; the form carries footnote-marked amendments including the IT (Eighth Amdt.) Rules, 2024.",
+      "stage": "PRESCRIBED FORM as published by the department (8 pages, including the Annexures).",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - printed in the header of every page of the document itself, not inferred from annotation style.",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER - served from the ITD forms catalogue at a static /documents/d/guest/ path.",
+      "sourceRank": 2,
+      "sourceRankNote": "A prescribed form is an appendix to a statutory instrument; rank 2, matching K4-SOURCE-02-S3/S4.",
+      "issuingAuthority": "Central Board of Direct Taxes",
+      "statutoryPower": "Rule 21AA of the Income-tax Rules, 1962, for relief under section 89",
+      "url": "https://www.incometaxindia.gov.in/documents/d/guest/103120000000007826-pdf-3",
+      "route": "browser pane navigated to the exact static /documents/ URL -> ITD served the file as a download and the OWNER accepted the save dialog (official-source-retrieval.md 3.1) -> read from ~/Downloads by its known filename only -> SHA-256 -> byte count cross-checked against the Content-Length the server reported -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "whatItEstablishes": [
+        "FORM NO. 10E and its Annexures, the form mandatory for a section 89 relief claim.",
+        "ITS PRESCRIBING RULE IS 21AA, NOT 21A. The form's own rubric reads '[See rule 21AA]' while its particulars are those 'referred to in rule 21A'. The acquisition brief 2.1 names the pair as 'Rule 21A + Form 10E', which elides that distinction.",
+        "The form's own structure: arrears/advance salary, gratuity for past services, compensation on termination, and commutation of pension, each routed to a different sub-rule of rule 21A."
+      ],
+      "whatItDoesNotEstablish": [
+        "It prescribes a DISCLOSURE, not an arithmetic. The relief computation lives in rule 21A(2), and holding the form does not specify it.",
+        "No field of this form exists anywhere in this repository, and D17's discipline still governs what may be modelled from it.",
+        "It decides no tax question and moves no pack toward ca_verified."
+      ],
+      "readingHazard": "The form is a fill-in template: much of its content is dotted leader lines, and the three extraction modes disagree on how those render. Read it for STRUCTURE (which particulars are demanded under which sub-rule), never as continuous prose."
+    },
+    {
+      "id": "K4-SOURCE-07-FORM-3CD",
+      "file": "ITD_Form-3CD_section-44AB-particulars.pdf",
+      "sha256": "f0e4e0702fd14408e6614ec88e6a33f2fd50cac277545dd370678bc715bb1fba",
+      "bytes": 2039734,
+      "act": "Income-tax Rules, 1962 - FORM NO. 3CD, prescribed by rule 6G(2)",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Current published e-Form as served by the ITD forms catalogue on 2026-08-22.",
+      "stage": "PRESCRIBED FORM as published by the department (20 pages), marked [e-Form].",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - printed in the header of every page of the document itself, not inferred from annotation style.",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER - served from the ITD forms catalogue at a static /documents/d/guest/ path.",
+      "sourceRank": 2,
+      "sourceRankNote": "A prescribed form is an appendix to a statutory instrument; rank 2.",
+      "issuingAuthority": "Central Board of Direct Taxes",
+      "statutoryPower": "Rule 6G(2) of the Income-tax Rules, 1962, for the statement of particulars under section 44AB",
+      "url": "https://www.incometaxindia.gov.in/documents/d/guest/103120000000007767-pdf-3",
+      "route": "browser pane navigated to the exact static /documents/ URL -> ITD served the file as a download and the OWNER accepted the save dialog (official-source-retrieval.md 3.1) -> read from ~/Downloads by its known filename only -> SHA-256 -> byte count cross-checked against the Content-Length the server reported -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "whatItEstablishes": [
+        "FORM NO. 3CD, the statement of particulars required under section 44AB, in its current published form.",
+        "Its prescribing rule is 6G(2); rule 6G(1) routes between Forms 3CA and 3CB depending on whether the person is already audited under another law."
+      ],
+      "whatItDoesNotEstablish": [
+        "GENERATING FORM 3CD IS AN EXPLICIT NON-GOAL of the roadmap (acquisition brief 2.1), and holding the form does not change that. The tax_audit capability row stays unsupported.",
+        "It does not supply the section 44AB thresholds, which come from section 44AB itself, nor a definition of derivative turnover, which no located source provides.",
+        "It decides no tax question and moves no pack toward ca_verified."
+      ],
+      "readingHazard": "A 20-page tabular form. Every substantive clause sits in a two-column table, so 3.2's table rule applies throughout - never read a clause number against its text from a single mode."
+    },
+    {
+      "id": "K4-SOURCE-07-FORM-10-IEA",
+      "file": "ITD_Form-10-IEA_section-115BAC-option.pdf",
+      "sha256": "b6af1600fa2f94f3dee2694d73806a8573fde7ba50630133e281045dd3874248",
+      "bytes": 208838,
+      "act": "Income-tax Rules, 1962 - FORM NO. 10-IEA, prescribed by rule 21AGA",
+      "statutoryWorld": "ASSESSMENT YEAR 2026-27 / INCOME-TAX ACT, 1961.",
+      "year": "Current published form as served by the ITD forms catalogue on 2026-08-22; rule 21AGA applies from assessment year 2024-25 onward.",
+      "stage": "PRESCRIBED FORM as published by the department (3 pages).",
+      "publisher": "Income Tax Department, Ministry of Finance, Government of India - printed in the header of every page of the document itself, not inferred from annotation style.",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER - served from the ITD forms catalogue at a static /documents/d/guest/ path.",
+      "sourceRank": 2,
+      "sourceRankNote": "A prescribed form is an appendix to a statutory instrument; rank 2.",
+      "issuingAuthority": "Central Board of Direct Taxes",
+      "statutoryPower": "Rule 21AGA of the Income-tax Rules, 1962, for the option under section 115BAC(6)",
+      "url": "https://www.incometaxindia.gov.in/documents/d/guest/103520000000098689-pdf-1",
+      "route": "browser pane navigated to the exact static /documents/ URL -> ITD served the file as a download and the OWNER accepted the save dialog (official-source-retrieval.md 3.1) -> read from ~/Downloads by its known filename only -> SHA-256 -> byte count cross-checked against the Content-Length the server reported -> page 1 read for identity -> pdftotext in -layout, default and -raw",
+      "retrievedOn": "2026-08-22",
+      "whatItEstablishes": [
+        "FORM No. 10-IEA - the application both for EXERCISING the option under section 115BAC(6)(i) and for WITHDRAWING it under the proviso to section 115BAC(6). One form serves both directions.",
+        "Its prescribing rule is 21AGA, and rule 21AGA(1)(a) ties the filing deadline to section 139(1) for a person having income from business or profession."
+      ],
+      "whatItDoesNotEstablish": [
+        "The engine RECOMMENDS a regime and models no opt-out instrument. Holding this form does not implement one, and no regime-election state exists in this repository.",
+        "It does not decide which regime is correct for any case, nor when an election is valid or lapses.",
+        "It decides no tax question and moves no pack toward ca_verified."
+      ],
+      "readingHazard": "The serial-number column and the label column are separately positioned, so the default mode interleaves them ('Sl.No. Name : 1. 2. PAN :'). Read the labels against rule 21AGA rather than against the serial numbers."
+    },
+    {
+      "id": "K4-SOURCE-08-FA2014-INTERIM",
+      "file": "Gazette_Finance-Act-2014_No-11-of-2014_complete.pdf",
+      "sha256": "dcd96cc9f273652e55613c3cd894e73ab7583712770d6863207aa97d18c5cbda",
+      "bytes": 112485,
+      "act": "Finance Act - THE FINANCE ACT, 2014, NO. 11 OF 2014 (the INTERIM Act)",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. The INTERIM (pre-general-election) Finance Act for the year commencing 1 April 2014. IT CARRIES NO FIRST SCHEDULE OF ITS OWN, BUT IT DOES ENACT RATES: its section 2 incorporates section 2 of, and the First Schedule to, the FINANCE ACT, 2013 and then substitutes into them, including a complete replacement Part I with actual slab rates. It was superseded for ASSESSMENT YEAR 2014-15 by the Finance (No. 2) Act, 2014. Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2014-03-04; the long title is 'An Act to continue the existing rates of income-tax for the financial year 2014-2015' - CONTINUE, not give effect to, which is the interim Act's signature",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 12, New Delhi, Wednesday, March 5, 2014 / Phalguna 14, 1935 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "gazetteNumber": "No digital CG-DL Gazette ID - the e-Gazette listing records it as NOT available; e-Gazette content id 158431; masthead No. 12",
+      "notificationDate": "2014-03-05",
+      "statutoryPower": "Act of Parliament. Section 2 applies the provisions of section 2 of, and the First Schedule to, the Finance Act, 2013 in relation to income-tax for the year commencing on the 1st day of April, 2014, WITH ENUMERATED MODIFICATIONS — and those modifications include, at (b)(i), 'for Part I, the following Part I shall be substituted', followed by a complete Part I stating rates. So it charges at rates it itself enacts, by substitution into another Act's Schedule, until superseded.",
+      "url": "https://egazette.gov.in/WriteReadData/2014/158431.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act', Reference Type Act, keyword 'Finance' -> listing row (0.11 MB) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; PAGE 1 READ FOR ACT IDENTITY BEFORE ANY USE; byte count cross-checked against the size the listing prints",
+      "exactEntry": "s.2: 'The provisions of section 2 of, and the First Schedule to, the Finance Act, 2013, shall apply in relation to income-tax for the assessment year or, as the case may be, the financial year commencing on the 1st day of April, 2014, as they apply in relation to income-tax for the assessment year or, as the case may be, the financial year commencing on the 1st day of April, 2013, with the following modifications'.",
+      "whatItEstablishes": [
+        "That the INTERIM Finance Act, 2014 carries NO FIRST SCHEDULE OF ITS OWN: 'THE FIRST SCHEDULE' occurs ZERO times in the artifact, established by a full-text scan rather than assumed.",
+        "That it nonetheless ENACTS OPERATIVE RATES, by substituting a complete new Part I into the FINANCE ACT, 2013's First Schedule — 'for Part I, the following Part I shall be substituted', followed by Paragraph A and the slab table. NO FIRST SCHEDULE OF ITS OWN IS NOT THE SAME FACT AS NO RATES, and an earlier draft of this entry conflated them until the review of PR #132 caught it.",
+        "That its substituted Paragraph A rates for AY 2014-15 (Nil to Rs. 2,00,000; 10 per cent. to Rs. 5,00,000; 20 per cent. to Rs. 10,00,000; 30 per cent. above) are IDENTICAL to the Finance (No. 2) Act, 2014's own Part I Paragraph A — checked by reading both, which is why nothing turns on the distinction for this year. That is a measurement about AY 2014-15 Paragraph A, not a rule about other years, other Paragraphs, or the surcharge provisos.",
+        "That it incorporates the FINANCE ACT, 2013, which makes that Act load-bearing for this year and NOT held by this repository.",
+        "The two-faced interim-Act rule, for a THIRD election year after 2019 and 2024: the finally applicable rate schedule never comes from an interim Act, but its substantive provisions — and its own substituted Part I — must still be read."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "It does NOT state the FINALLY APPLICABLE AY 2014-15 rates. Those are in the Finance (No. 2) Act, 2014, registered alongside it, which superseded this Act for that assessment year.",
+        "It does not supply the Finance Act, 2013 text it incorporates, which remains UNHELD."
+      ],
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "retrievedOn": "2026-08-23",
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded and decodes to replacement characters; the English statutory text is clean. Every rate in this Act sits in a TABLE, so -layout may misrender rows - read all three modes. *** PAGE 3 CARRIES A BLOCK OPENING '\"PART I' / 'INCOME-TAX' THAT IS NOT A FIRST SCHEDULE OF THIS ACT - AND IS STILL OPERATIVE RATES. *** It is the text SUBSTITUTED BY SECTION 2 into the Finance Act, 2013's First Schedule ('for Part I, the following Part I shall be substituted'), so it reads like a rate schedule because it IS one - it simply lives in another Act's Schedule. The full-text scan for 'THE FIRST SCHEDULE' returns ZERO, which settles only that this Act has no Schedule of its own. AN EARLIER DRAFT OF THIS NOTE TREATED THAT SCAN AS SETTLING THAT THE ACT ENACTS NO RATES; the review of PR #132 caught it, and the distinction is kept here because it is the whole trap."
+    },
+    {
+      "id": "K4-SOURCE-08-FA2014-NO2",
+      "file": "Gazette_Finance-No-2-Act-2014_No-25-of-2014_complete.pdf",
+      "sha256": "b241bbdbe994ce8408fe1b657b41d9e46f35c4607e3eea59499043bf02d24c19",
+      "bytes": 459922,
+      "act": "Finance Act - THE FINANCE (No. 2) ACT, 2014, NO. 25 OF 2014",
+      "statutoryWorld": "INCOME-TAX ACT, 1961. Charges income-tax for ASSESSMENT YEAR 2014-15 (previous year / financial year 2013-14). This Act SUPERSEDED the interim Finance Act, 2014 (NO. 11 OF 2014) for that assessment year. Registered for the section 89 arrears lookback; it does NOT serve AY 2026-27 and it does NOT serve the Income-tax Act, 2025 tax-year world.",
+      "year": "Assented 2014-08-06; the long title gives effect to the financial proposals of the Central Government for the financial year 2014-2015",
+      "stage": "ENACTED - Gazette of India, EXTRAORDINARY, PART II - Section 1, No. 29, New Delhi, Wednesday, August 6, 2014 / Shravana 15, 1936 (Saka). PUBLISHED BY AUTHORITY. This is the Act AS ENACTED, not the Finance Bill.",
+      "gazetteNumber": "No digital CG-DL Gazette ID - the e-Gazette listing records it as NOT available; e-Gazette content id 160514; masthead No. 29",
+      "notificationDate": "2014-08-06",
+      "statutoryPower": "Act of Parliament. Section 2(1) charges income-tax for the assessment year commencing on the 1st day of April, 2014 at the rates specified in Part I of the First Schedule, increased by surcharge as provided therein.",
+      "url": "https://egazette.gov.in/WriteReadData/2014/160514.pdf",
+      "route": "official e-Gazette 'Search by Bill / Assent / Act', Reference Type Act, keyword 'Finance' -> listing row (0.44 MB) -> direct PDF GET -> local artifact bytes -> SHA-256 -> pdftotext -layout, default and -raw; PAGE 1 READ FOR ACT IDENTITY BEFORE ANY USE; byte count cross-checked against the size the listing prints",
+      "exactEntry": "s.2(1): 'Subject to the provisions of sub-sections (2) and (3), for the assessment year commencing on the 1st day of April, 2014, income-tax shall be charged at the rates specified in Part I of the First Schedule and such tax shall be increased by a surcharge, for purposes of the Union, calculated in each case in the manner provided therein.'",
+      "whatItEstablishes": [
+        "The enacted rates of income-tax for ASSESSMENT YEAR 2014-15 (previous year 2013-14), in Part I of its First Schedule.",
+        "The section 2 charging words that bind Part I of the First Schedule to that assessment year.",
+        "The previous-year to assessment-year to Finance Act mapping: previous year 2013-14 -> AY 2014-15 -> THE FINANCE (No. 2) ACT, 2014, NO. 25 OF 2014 - established by reading THIS Act's own section 2 and the interim Act's, not by analogy with 2019 and 2024.",
+        "That 2014, like 2019 and 2024, produced TWO Finance Acts and that the SECOND one carries the rate schedule."
+      ],
+      "whatItDoesNotEstablish": [
+        "It decides no tax treatment for this repository, implements nothing, and moves no pack toward ca_verified.",
+        "Registration is retrieval only: no section 89 relief mechanism, Form 10E field, or historical-rate computation is implemented or approved by holding it.",
+        "It does not close the window. The Finance Acts of 2011, 2012 and 2013 remain UNHELD, so previous years 2010-11, 2011-12 and 2012-13 are still unsourced."
+      ],
+      "publisher": "Controller of Publications, Government of India, via the official e-Gazette; the Act was enacted by Parliament and published by the Ministry of Law and Justice (Legislative Department)",
+      "publisherOfficialness": "OFFICIAL GOVERNMENT PUBLISHER. The fetched PDF carries the Gazette of India masthead, EXTRAORDINARY, PART II - Section 1, and says PUBLISHED BY AUTHORITY.",
+      "sourceRank": 1,
+      "sourceRankNote": "Statute AS ENACTED, published in the Gazette of India - the TOP of the official-source-retrieval.md section 5 ladder. This is the enacted Act, not a Bill and not a departmental reproduction.",
+      "issuingAuthority": "Parliament of India; assented by the President; published by the Ministry of Law and Justice (Legislative Department)",
+      "retrievedOn": "2026-08-23",
+      "readingHazard": "Bilingual Gazette. The Hindi text layer is degraded and decodes to replacement characters; the English statutory text is clean. Every rate in this Act sits in a TABLE, so -layout may misrender rows - read all three modes. PART I / PART III TRAP, as for every First Schedule in this corpus: Part I states the AY 2014-15 rates and PART III (page 44) states the FOLLOWING year's rates for advance tax and salary TDS, under near-identical 'Paragraph A' wording. A span from the wrong Part is a whole year out. The masthead spells the Saka month 'SHRAVANA' while the dateline below it spells it 'Sravana' - one document, two spellings."
+    }
+  ],
+  "readingHazards": [
+    "pdftotext -layout MISRENDERS STATUTORY TABLES (official-source-retrieval.md §3.2). The Finance Act 2026 First Schedule rate tables in K4-PORT-02-S1 render with rows offset under -layout — the same defect that offset the ITA 2025 s.202(1) table by one row. NEVER quote a rate from a single extraction mode; cross-check with and without -layout.",
+    "THERE IS A THIRD EXTRACTION MODE AND IT IS THE BEST ONE FOR THESE PUBLISHERS' TABLES (K4-SOURCE-02). `pdftotext -raw` emits content-stream order and rendered the ITD tables ROW-MAJOR and correctly paired where `-layout` shuffled them and the default mode split them column-major into blocks that had to be re-paired by hand. It was DECISIVE twice: it resolved Finance Act 2026 s.2(5)'s marginal-relief Table, and it settled the rule 12(1)(a) proviso clause numbering that neither documented mode could. Treat §3.2's 'both modes' as a FLOOR, not a ceiling — where two modes disagree or are both ambiguous, run the third before concluding anything.",
+    "A DOCUMENT THAT DOES NOT NAME ITS OWN ACT IS STILL IDENTIFIABLE, BUT THE IDENTIFICATION MUST BE WRITTEN DOWN (K4-SOURCE-02). None of the four ITD per-section PDFs carries a 'Finance Act, 2026' or 'Income-tax Rules, 1962' title line. Each entry above records how its identity was established — retrieval location, internal charging year or vocabulary, and cross-publisher corroboration. Do not infer an Act from a filename.",
+    "ICAI editions are reproductions. They are excellent working copies and they name their primary sources, but they are not the Gazette. Do not let a rank-2 reproduction stand in for rank-1 statute in a provenance citation without saying which it is (§5)."
+  ]
+}

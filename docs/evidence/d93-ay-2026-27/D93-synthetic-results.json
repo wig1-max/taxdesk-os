@@ -1,0 +1,618 @@
+[
+  {
+    "case_id": "D93-01",
+    "purpose": "Current STCL across multiple STCG buckets",
+    "inputs": {
+      "case_id": "D93-01",
+      "purpose": "Current STCL across multiple STCG buckets",
+      "stcg_30": 60000,
+      "stcg_app": 60000,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 200000,
+      "current_stcl_20": 100000,
+      "current_ltcl_125": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 20000,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 200000
+    },
+    "current_loss_used": {
+      "stcl": 100000,
+      "ltcl": 0
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 20000,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 200000
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 20000,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 200000
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 200000,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 75000,
+    "section_112a_tax_before_cess": 9375
+  },
+  {
+    "case_id": "D93-02",
+    "purpose": "Current STCL reaches multiple LTCG classes; 112A is last",
+    "inputs": {
+      "case_id": "D93-02",
+      "purpose": "Current STCL reaches multiple LTCG classes; 112A is last",
+      "stcg_30": 40000,
+      "stcg_app": 30000,
+      "stcg_20": 0,
+      "ltcg_other_125": 50000,
+      "ltcg_112a": 200000,
+      "current_stcl_20": 150000,
+      "current_ltcl_125": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 170000
+    },
+    "current_loss_used": {
+      "stcl": 150000,
+      "ltcl": 0
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 170000
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 170000
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 170000,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 45000,
+    "section_112a_tax_before_cess": 5625
+  },
+  {
+    "case_id": "D93-03",
+    "purpose": "Current LTCL across multiple LTCG classes; 112A is last",
+    "inputs": {
+      "case_id": "D93-03",
+      "purpose": "Current LTCL across multiple LTCG classes; 112A is last",
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 60000,
+      "ltcg_112a": 150000,
+      "current_stcl_20": 0,
+      "current_ltcl_125": 100000,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 110000
+    },
+    "current_loss_used": {
+      "stcl": 0,
+      "ltcl": 100000
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 110000
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 110000
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 110000,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 0,
+    "section_112a_tax_before_cess": 0
+  },
+  {
+    "case_id": "D93-04",
+    "purpose": "Current loss is consumed before brought-forward loss",
+    "inputs": {
+      "case_id": "D93-04",
+      "purpose": "Current loss is consumed before brought-forward loss",
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 20000,
+      "ltcg_112a": 40000,
+      "current_stcl_20": 0,
+      "current_ltcl_125": 50000,
+      "bf_stcl": 0,
+      "bf_ltcl": 50000
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 10000
+    },
+    "current_loss_used": {
+      "stcl": 0,
+      "ltcl": 50000
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 10000
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 0
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 10000
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 40000
+    },
+    "schedule_si_112a_income": 0,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 0,
+    "section_112a_tax_before_cess": 0
+  },
+  {
+    "case_id": "D93-05",
+    "purpose": "Current STCL is consumed before brought-forward STCL",
+    "inputs": {
+      "case_id": "D93-05",
+      "purpose": "Current STCL is consumed before brought-forward STCL",
+      "stcg_30": 150000,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 0,
+      "current_stcl_20": 100000,
+      "current_ltcl_125": 0,
+      "bf_stcl": 100000,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 50000,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 0
+    },
+    "current_loss_used": {
+      "stcl": 100000,
+      "ltcl": 0
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 50000,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 0
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 0
+    },
+    "brought_forward_loss_used": {
+      "stcl": 50000,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 50000,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 0,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 0,
+    "section_112a_tax_before_cess": 0
+  },
+  {
+    "case_id": "D93-06",
+    "purpose": "Utility BFLA uses BF LTCL before BF STCL on scarce LTCG",
+    "inputs": {
+      "case_id": "D93-06",
+      "purpose": "Utility BFLA uses BF LTCL before BF STCL on scarce LTCG",
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 30000,
+      "ltcg_112a": 30000,
+      "current_stcl_20": 0,
+      "current_ltcl_125": 0,
+      "bf_stcl": 50000,
+      "bf_ltcl": 50000
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 30000,
+      "ltcg_112a": 30000
+    },
+    "current_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 30000,
+      "ltcg_112a": 30000
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 0
+    },
+    "brought_forward_loss_used": {
+      "stcl": 10000,
+      "ltcl": 50000
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 40000,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 0,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 0,
+    "section_112a_tax_before_cess": 0
+  },
+  {
+    "case_id": "D93-07",
+    "purpose": "Section 112A below threshold",
+    "inputs": {
+      "case_id": "D93-07",
+      "purpose": "Section 112A below threshold",
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 124999,
+      "current_stcl_20": 0,
+      "current_ltcl_125": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 124999
+    },
+    "current_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 124999
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 124999
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 124999,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 0,
+    "section_112a_tax_before_cess": 0
+  },
+  {
+    "case_id": "D93-08",
+    "purpose": "Section 112A exactly at threshold",
+    "inputs": {
+      "case_id": "D93-08",
+      "purpose": "Section 112A exactly at threshold",
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 125000,
+      "current_stcl_20": 0,
+      "current_ltcl_125": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 125000
+    },
+    "current_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 125000
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 125000
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 125000,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 0,
+    "section_112a_tax_before_cess": 0
+  },
+  {
+    "case_id": "D93-09",
+    "purpose": "Section 112A just above threshold with visible rounded tax",
+    "inputs": {
+      "case_id": "D93-09",
+      "purpose": "Section 112A just above threshold with visible rounded tax",
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 125008,
+      "current_stcl_20": 0,
+      "current_ltcl_125": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 125008
+    },
+    "current_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 125008
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 125008
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 125008,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 8,
+    "section_112a_tax_before_cess": 1
+  },
+  {
+    "case_id": "D93-10",
+    "purpose": "Loss set-off moves gross 112A gain below threshold",
+    "inputs": {
+      "case_id": "D93-10",
+      "purpose": "Loss set-off moves gross 112A gain below threshold",
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 150000,
+      "current_stcl_20": 0,
+      "current_ltcl_125": 30000,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 120000
+    },
+    "current_loss_used": {
+      "stcl": 0,
+      "ltcl": 30000
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 120000
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 120000
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 120000,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 0,
+    "section_112a_tax_before_cess": 0
+  },
+  {
+    "case_id": "D93-11",
+    "purpose": "Loss set-off leaves 112A gain above threshold",
+    "inputs": {
+      "case_id": "D93-11",
+      "purpose": "Loss set-off leaves 112A gain above threshold",
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 150000,
+      "current_stcl_20": 0,
+      "current_ltcl_125": 10000,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_cg_after_current_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 140000
+    },
+    "current_loss_used": {
+      "stcl": 0,
+      "ltcl": 10000
+    },
+    "schedule_cyla_capital_buckets": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 140000
+    },
+    "schedule_bfla_after_bf_setoff": {
+      "stcg_30": 0,
+      "stcg_app": 0,
+      "stcg_20": 0,
+      "ltcg_other_125": 0,
+      "ltcg_112a": 140000
+    },
+    "brought_forward_loss_used": {
+      "stcl": 0,
+      "ltcl": 0
+    },
+    "schedule_cfl_remaining": {
+      "current_stcl": 0,
+      "current_ltcl": 0,
+      "bf_stcl": 0,
+      "bf_ltcl": 0
+    },
+    "schedule_si_112a_income": 140000,
+    "section_112a_threshold": 125000,
+    "section_112a_taxable_base": 15000,
+    "section_112a_tax_before_cess": 1875
+  }
+]

@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   TaxDesk OS design tokens (Phase K.2.8.5)
+   Foundation: warm off-white content, white elevated surfaces, a deep
+   graphite-navy application shell, restrained elevation, and status
+   semantics that are never carried by colour alone.
+   Existing token names (--background, --card, --primary, …) are preserved so
+   the whole app keeps compiling; new tokens are additive.
+   ========================================================================== */
+
+@layer base {
+  :root {
+    /* Content surfaces */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --elevated: 0 0% 100%;
+
+    /* Brand */
+    --primary: 222 68% 30%; /* TaxDesk OS deep blue */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 214 32% 95%;
+    --secondary-foreground: 222 47% 15%;
+    --muted: 214 32% 95%;
+    --muted-foreground: 215 16% 42%;
+    --accent: 214 40% 93%;
+    --accent-foreground: 222 47% 15%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 30% 89%;
+    --input: 214 30% 87%;
+    --ring: 222 80% 45%;
+    --radius: 0.55rem;
+
+    /* Application shell (persistent sidebar / top bar) */
+    --shell: 222 47% 12%;
+    --shell-foreground: 213 31% 91%;
+    --shell-muted: 215 20% 62%;
+    --shell-border: 218 33% 22%;
+    --shell-accent: 222 44% 18%;
+    --shell-active: 222 70% 42%;
+    --shell-active-foreground: 210 40% 98%;
+
+    /* Status semantics: [base] text, [soft] tinted surface, [border] hairline */
+    --success: 152 60% 30%;
+    --success-soft: 150 60% 95%;
+    --success-border: 150 45% 82%;
+
+    --warning: 32 78% 34%;
+    --warning-soft: 40 92% 94%;
+    --warning-border: 40 80% 80%;
+
+    --danger: 0 68% 44%;
+    --danger-soft: 0 80% 96%;
+    --danger-border: 0 70% 87%;
+
+    --info: 200 78% 34%;
+    --info-soft: 200 80% 95%;
+    --info-border: 200 65% 82%;
+
+    --neutral: 215 16% 42%;
+    --neutral-soft: 214 32% 95%;
+    --neutral-border: 214 30% 87%;
+
+    /* Elevation */
+    --elev-1: 0 1px 2px 0 hsl(222 47% 11% / 0.06), 0 1px 3px 0 hsl(222 47% 11% / 0.05);
+    --elev-2: 0 2px 6px -1px hsl(222 47% 11% / 0.08), 0 4px 12px -2px hsl(222 47% 11% / 0.08);
+    --elev-3: 0 10px 30px -6px hsl(222 47% 11% / 0.18);
+
+    /* Motion — productivity-software timing */
+    --motion-fast: 130ms;
+    --motion-panel: 200ms;
+    --motion-route: 180ms;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  /* All financial figures line up: tabular, lining numerals. */
+  .tnum {
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum" 1, "lnum" 1;
+  }
+  /* Visible focus everywhere, keyboard-friendly. */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .card-elevated {
+    box-shadow: var(--elev-1);
+  }
+}
+
+/* Restrained, reusable entrance/utility motion. Every animation is gated by
+   prefers-reduced-motion below. */
+@layer utilities {
+  @keyframes tj-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes tj-rise-in {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes tj-panel-in {
+    from { opacity: 0; transform: translateY(6px) scale(0.99); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes tj-drawer-in {
+    from { transform: translateX(100%); }
+    to { transform: none; }
+  }
+  @keyframes tj-shimmer {
+    100% { transform: translateX(100%); }
+  }
+  .animate-fade-in { animation: tj-fade-in var(--motion-route) var(--ease-out) both; }
+  .animate-rise-in { animation: tj-rise-in var(--motion-route) var(--ease-out) both; }
+  .animate-panel-in { animation: tj-panel-in var(--motion-panel) var(--ease-out) both; }
+  .animate-drawer-in { animation: tj-drawer-in var(--motion-panel) var(--ease-out) both; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

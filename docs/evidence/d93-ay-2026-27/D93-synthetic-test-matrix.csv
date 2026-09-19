@@ -1,0 +1,12 @@
+﻿case_id,purpose,input_stcg_30,input_stcg_app,input_stcg_20,input_ltcg_other_125,input_ltcg_112a,input_current_stcl,input_current_ltcl,input_bf_stcl,input_bf_ltcl,cg_stcg_30,cg_stcg_app,cg_stcg_20,cg_ltcg_other_125,cg_ltcg_112a,current_stcl_used,current_ltcl_used,bfla_stcg_30,bfla_stcg_app,bfla_stcg_20,bfla_ltcg_other_125,bfla_ltcg_112a,bf_stcl_used,bf_ltcl_used,cfl_current_stcl,cfl_current_ltcl,cfl_bf_stcl,cfl_bf_ltcl,si_112a_income,taxable_112a_after_threshold,112a_tax_before_cess
+D93-01,Current STCL across multiple STCG buckets,60000,60000,0,0,200000,100000,0,0,0,0,20000,0,0,200000,100000,0,0,20000,0,0,200000,0,0,0,0,0,0,200000,75000,9375
+D93-02,Current STCL reaches multiple LTCG classes; 112A is last,40000,30000,0,50000,200000,150000,0,0,0,0,0,0,0,170000,150000,0,0,0,0,0,170000,0,0,0,0,0,0,170000,45000,5625
+D93-03,Current LTCL across multiple LTCG classes; 112A is last,0,0,0,60000,150000,0,100000,0,0,0,0,0,0,110000,0,100000,0,0,0,0,110000,0,0,0,0,0,0,110000,0,0
+D93-04,Current loss is consumed before brought-forward loss,0,0,0,20000,40000,0,50000,0,50000,0,0,0,0,10000,0,50000,0,0,0,0,0,0,10000,0,0,0,40000,0,0,0
+D93-05,Current STCL is consumed before brought-forward STCL,150000,0,0,0,0,100000,0,100000,0,50000,0,0,0,0,100000,0,0,0,0,0,0,50000,0,0,0,50000,0,0,0,0
+D93-06,Utility BFLA uses BF LTCL before BF STCL on scarce LTCG,0,0,0,30000,30000,0,0,50000,50000,0,0,0,30000,30000,0,0,0,0,0,0,0,10000,50000,0,0,40000,0,0,0,0
+D93-07,Section 112A below threshold,0,0,0,0,124999,0,0,0,0,0,0,0,0,124999,0,0,0,0,0,0,124999,0,0,0,0,0,0,124999,0,0
+D93-08,Section 112A exactly at threshold,0,0,0,0,125000,0,0,0,0,0,0,0,0,125000,0,0,0,0,0,0,125000,0,0,0,0,0,0,125000,0,0
+D93-09,Section 112A just above threshold with visible rounded tax,0,0,0,0,125008,0,0,0,0,0,0,0,0,125008,0,0,0,0,0,0,125008,0,0,0,0,0,0,125008,8,1
+D93-10,Loss set-off moves gross 112A gain below threshold,0,0,0,0,150000,0,30000,0,0,0,0,0,0,120000,0,30000,0,0,0,0,120000,0,0,0,0,0,0,120000,0,0
+D93-11,Loss set-off leaves 112A gain above threshold,0,0,0,0,150000,0,10000,0,0,0,0,0,0,140000,0,10000,0,0,0,0,140000,0,0,0,0,0,0,140000,15000,1875

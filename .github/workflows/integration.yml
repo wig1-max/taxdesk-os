@@ -1,0 +1,74 @@
+name: Integration (Supabase-backed)
+
+# Starts a clean local Supabase stack on the runner, applies every migration
+# from zero, then runs the database catalog assertions, the hostile-client
+# security suites, the guarded-RPC smoke test and the Playwright smoke suite.
+# Every command targets the runner's own local Docker stack; nothing contacts a
+# remote Supabase project.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  integration:
+    name: local Supabase + security suites + E2E smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Install Supabase CLI
+        run: |
+          npm install --prefix "$RUNNER_TEMP/supabase-cli" --no-save --no-package-lock supabase@2.111.0
+          echo "$RUNNER_TEMP/supabase-cli/node_modules/.bin" >> "$GITHUB_PATH"
+
+      - name: Confirm no remote Supabase project is linked
+        run: npm run db:guard
+
+      - name: Start local Supabase (applies every migration from zero + seed)
+        run: supabase start
+
+      - name: Database catalog boundary assertions
+        run: npm run test:db
+
+      - name: Write CI-only local environment
+        run: |
+          set -euo pipefail
+          eval "$(supabase status -o env | sed -E 's/^([A-Z_]+)="(.*)"$/\1="\2"/')"
+          {
+            echo "NEXT_PUBLIC_SUPABASE_URL=$API_URL"
+            echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=$ANON_KEY"
+            echo "SUPABASE_SERVICE_ROLE_KEY=$SERVICE_ROLE_KEY"
+            echo "PAN_ENCRYPTION_KEY=$(node -e "console.log(require('crypto').randomBytes(32).toString('base64'))")"
+            echo "APP_BASE_URL=http://localhost:3000"
+          } > .env.local
+
+      - name: Bootstrap local Auth users
+        run: npm run test:e2e:bootstrap
+
+      - name: Hostile-client security suites
+        run: npm run test:security
+
+      - name: Guarded-RPC smoke test
+        run: npm run test:rpc-smoke
+
+      - name: Playwright smoke suite
+        run: npm run test:e2e:smoke
+
+      - name: Stop local Supabase
+        if: always()
+        run: supabase stop || true

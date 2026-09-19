@@ -1,0 +1,101 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# env files — NEVER commit real secrets
+.env
+.env.local
+.env.*.local
+
+# testing
+/coverage
+/playwright-report
+/test-results
+# Playwright saved auth/session state — never commit
+/playwright/.auth
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# Local secrets
+.env
+.env*.local
+.env.production
+
+# Build and test output
+.next/
+node_modules/
+test-results/
+playwright-report/
+/coverage/
+tsconfig.tsbuildinfo
+
+# Supabase local CLI state
+supabase/.temp/
+supabase/.branches/
+supabase/snippets/
+
+# Generated artifacts (rendered PDFs etc.) — reproducible, never source
+output/
+
+
+# Local-only notes kept deliberately out of git history (e.g. personal-profile
+# research about identifiable individuals). See k3-external-tax-resource-memory.md.
+*.local.md
+
+# AUDIT-04-F14: scratch directories some tooling drops in the repo root. Three
+# empty ones (tmp87t30pr_, tmp89wr1inc, tmps_49bgvy) sat here from 2026-07-28
+# and were invisible to `git status` only because git does not track empty
+# directories -- a non-empty one would have read as session work.
+tmp*/
+
+# OPS-07: machine-generated local tooling state (finding ledger, hook state,
+# run history). Session-scoped and per-developer — not project content. It was
+# inherited as an untracked path across three sessions before being decided.
+.mimosa/
+
+# AUDIT-08 production-release hygiene. {"_tag":"Error","error":{"code":"LegacyProjectNotLinkedError","message":"Cannot find project ref. Have you run supabase link?"}} writes to the
+# CURRENT directory, so a release run from the repo root drops production
+# roles/schema/DATA here as untracked files -- one `git add -A` from being
+# committed. That happened on 2026-08-10: a 172 KB production data.sql sat in
+# the repo root. The runbook says to write dumps OUTSIDE the repository
+# (supabase/deploy/PENDING-2026-08-10-production-migration-runbook.md step 4);
+# this is the backstop for when someone runs the command from here anyway.
+# Anchored to the ROOT so a legitimately tracked schema.sql elsewhere is
+# unaffected.
+/roles.sql
+/schema.sql
+/data.sql
+/*.dump
+
+# K4-PORT-02 (D300): local statutory SOURCE ARTIFACTS, deliberately untracked.
+#
+# `.sources/statutory/` holds the official PDFs a session quotes statute from
+# (the enacted Income-tax Act 2025, the ICAI editions carrying the Finance Act
+# 2026 and the Income-tax Rules 2026, CBDT memoranda). They live in the project
+# so they stop living in `~/Downloads`, which is the OWNER'S PERSONAL DIRECTORY
+# and a transient one -- `K4-PORT-00` opened an unlabeled PDF there expecting
+# statute and found an owner personal record.
+#
+# They are NOT COMMITTED, and that is the established convention rather than an
+# oversight: this repository tracks ZERO PDFs, `K4-PORT-00-S2`'s 106 MB Act PDF
+# was registered in the source register without being vendored, and these four
+# artifacts total ~134 MB against a 39 MB `.git`. Committing them would more
+# than quadruple the repository permanently, since git history cannot be pruned
+# cheaply.
+#
+# What IS committed is the evidence that makes them verifiable and replaceable:
+# `docs/evidence/statutory-sources/manifest.json` (SHA-256 + provenance per
+# artifact) and the source-register entries in
+# `docs/operations/official-source-retrieval.md` §6. A session that finds a file
+# missing re-retrieves it from the registered URL and checks the hash.
+/.sources/

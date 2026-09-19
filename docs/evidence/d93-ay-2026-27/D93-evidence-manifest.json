@@ -1,0 +1,85 @@
+{
+  "decision": "D93",
+  "retrieved_on": "2026-07-31",
+  "tax_period": {"financial_year": "2025-26", "assessment_year": "2026-27"},
+  "method": "Static inspection of official notified forms, validation rules, JSON schemas, and the official ITR-2 v1.2 workbook calculation/export source and formulas. Workbook macros were not executed and no portal upload was performed.",
+  "official_artifacts": [
+    {
+      "name": "Common Offline Utility ITR-1/2/3/4 v1.2.2",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITDe-Filing-2026-Setup-1.2.2_0.zip",
+      "release_date": "2026-07-17",
+      "preserved_component": "ITDe-Filing-2026-Setup-1.2.2.msi",
+      "sha256": "112B73C2BE8B2E34D18295B10A9414947A9A708239E5195A9DC5163B37002F0F"
+    },
+    {
+      "name": "ITR-2 Excel Utility v1.2",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR2_AY_26-27_V1.2.zip",
+      "release_date": "2026-07-17",
+      "zip_sha256": "7A6E10DEF93B73CD3AFA88B25E424A096F0EED9B34D86C65BF84037841418E3B",
+      "xlsm_sha256": "E5CE02F3FFC848D7FB708D4157C6C41AF12013E68EE84686715B788C1F9FB785"
+    },
+    {
+      "name": "ITR-2 JSON Schema v1.1",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/ITR-2_2026_Main_V1.1.json",
+      "release_date": "2026-06-30",
+      "sha256": "77BE18189ECAC94C7ED22BAAA5E3BB46E238F781F55B9E2A8F6547F1E8E00EC8"
+    },
+    {
+      "name": "ITR-3 JSON Schema v1.1",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-07/ITR-3_2026_Main_V1.1.json",
+      "release_date": "2026-06-30",
+      "sha256": "66F4BD705E0E0788FDACB37EB297ACE56749D791B84F2F170F4DA84236C25E8B"
+    },
+    {
+      "name": "ITR-2 Validation Rules v1.0",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf",
+      "document_date": "2026-05-26",
+      "sha256": "2321C5BA2469D3C9EAEEE40D906B99ABE56176782D547E6D0EC09FFDB529550B"
+    },
+    {
+      "name": "ITR-3 Validation Rules v1.0",
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf",
+      "document_date": "2026-06-18",
+      "sha256": "60334E821EEF769B1AF2826B7E8CA2F1AEB76B302886473ED5FEC6A0B7CC9D5D"
+    }
+  ],
+  "notified_forms": [
+    {"name": "ITR-2 AY 2026-27, Notification 46/2026, G.S.R. 227(E)", "url": "https://www.incometaxindia.gov.in/documents/d/guest/notification-no-46-2026-pdf"},
+    {"name": "ITR-3 AY 2026-27, Notification 47/2026, G.S.R. 228(E)", "url": "https://www.incometaxindia.gov.in/documents/d/guest/notification-no-47-2026-pdf"}
+  ],
+  "statute": [
+    {"section": "70", "url": "https://www.incometaxindia.gov.in/w/section-70-55"},
+    {"section": "71", "url": "https://www.incometaxindia.gov.in/w/section-71-65"},
+    {"section": "74", "url": "https://www.incometaxindia.gov.in/w/section-74-63"},
+    {"section": "111A", "url": "https://www.incometaxindia.gov.in/w/section-111a?p_l_back_url=%2Fsearch%3Fq%3DSection%2B271C%26category%3D4216417%26category%3D38263%26sort%3Dmodified-%26delta%3D20%26start%3D32%26category%3D4209131"},
+    {"section": "112", "url": "https://wmstatic-prd.incometaxindia.gov.in/web/guest/w/section-112-64"},
+    {"section": "112A", "url": "https://www.incometaxindia.gov.in/w/section-112a-60"}
+  ],
+  "primary_case_law": [
+    {"case": "Divya Dinesh v DCIT, ITA 2194 & 2195/Bang/2025, 24 February 2026", "court": "ITAT Bengaluru", "url": "https://itat.gov.in/public/files/upload/1772175089-cxFDsX-1-TO.pdf"},
+    {"case": "India Acorn Fund Ltd v DCIT, ITA 4556/Mum/2023, 29 May 2024", "court": "ITAT Mumbai", "url": "https://itat.gov.in/public/files/upload/1717569018-ITA%20No.%204556%20Mum%202023-India%20Acron%20Fund%20Ltd..pdf"},
+    {"case": "Ishana Capital Master Fund v DCIT, ITA 2029/Mum/2025, 31 July 2025", "court": "ITAT Mumbai", "url": "https://itat.gov.in/public/files/upload/1754384126-kHdAmZ-1-TO.pdf"},
+    {"case": "CIT v Rungamatee Trexim (P.) Ltd, ITA 812/2008, 19 December 2008", "court": "Calcutta High Court", "preservation_note": "Holding reproduced in multiple official ITAT orders; an official High Court PDF was not independently retrieved in this bounded search."}
+  ],
+  "workbook_trace": {
+    "current_setoff_entry": "CG_Calc.doSetoff",
+    "cyla_bfla_cfl_entry": "CYLABFLASetOff -> CYLA routines -> calcBFLA -> calcCFL",
+    "stcl20_cross_bucket_sequence": ["STCG 30%", "STCG applicable rate", "LTCG 12.5%"],
+    "ltcg_12_5_rule": "Section 112A is the final active sub-bucket reached by loss in setOffAgainst125",
+    "bf_loss_sequence": ["brought-forward LTCL", "brought-forward STCL"],
+    "threshold_formula_trace": [
+      "Schedule SI G28 receives post-BFLA Section 112A allocation",
+      "H28 applies unused resident basic-exemption shortfall",
+      "P3 = MIN(125000,H28)",
+      "I28 = ROUND(IF(H28>P3,(H28-P3)*12.5%,0),0)"
+    ]
+  },
+  "limits": [
+    "No client data used.",
+    "No product code implemented.",
+    "No official portal upload or CPC acceptance test performed.",
+    "Synthetic JSON is a conformance record, not an uploadable return.",
+    "Revalidate on every utility/schema/validation revision."
+  ]
+}
+
